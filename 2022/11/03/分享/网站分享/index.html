@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html >
+
+<head >
+    <meta charset="utf-8">
+    <!-- 总布局 -->
+    
+<link rel="stylesheet" href="/css/layout.css">
+ 
+    <!-- 图标库 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <!-- header -->
+    
+<link rel="stylesheet" href="/css/header/author.css">
+
+    
+<link rel="stylesheet" href="/css/header/nav.css">
+
+    
+<link rel="stylesheet" href="/css/header/search.css">
+
+    
+<link rel="stylesheet" href="/css/header/social.css">
+
+     
+        
+<link rel="stylesheet" href="/css/header/toc.css">
+
+     
+
+    <!-- footer -->
+    
+<link rel="stylesheet" href="/css/footer/back_top.css">
+
+    
+<link rel="stylesheet" href="/css/page/content.css">
+
+    
+<link rel="stylesheet" href="/css/page/categories.css">
+
+
+    <!-- highlight.js 代码高亮 -->
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/atom-one-dark.css">
+    
+    
+    <!-- markdown -->
+    
+<link rel="stylesheet" href="/css/page/markdown.css">
+
+    <!-- 
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+ -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+    <!-- 站点图标 -->
+    
+        <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body >
+    
+        
+<link rel="stylesheet" href="/css/page/banner.css">
+
+        <div id="banner" style="background-image: url('https://i.imgtg.com/2023/01/21/Sot9s.jpg'); ">
+			<h1 class="hitokoto"></h1>
+			<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	        
+<script src="/js/hitokoto.js"></script>
+
+        </div>
+    
+    <div id="main">
+        <div id="header">
+            <section class="header-author">
+    <div class="author">
+    
+    <img src="https://i.imgtg.com/2023/01/21/SqAtX.jpg" class="author-avatar" alt="liuming">
+    
+    
+    <h2 class="author-name">liuming</h2>
+    
+    
+    <p class="author-desc">为之则易 不为则难</p>
+    
+</div>
+</section>
+<section class="header-search">
+    <!-- <header class="header" itemscope itemtype="http://schema.org/WPHeader"> -->
+      <div class="search" id="search-form-wrap">
+      
+            <form class="search-form sidebar-form">
+                  <div class="input-group">
+                  <input type="text" class="search-form-input form-control" placeholder="搜索" />
+                  <!-- <span class="input-group-btn"> -->
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                  <!-- </span> -->
+                  </div>
+            </form>
+            <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                  <div class="ins-input-wrapper">
+                  <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+                  <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  </div>
+                  <div class="ins-section-wrapper">
+                  <div class="ins-section-container"></div>
+                  </div>
+            </div>
+            </div>                
+      
+      </div>
+<!-- </header> -->
+<script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+
+   <script>
+       (function (window) {
+           var INSIGHT_CONFIG = {
+               TRANSLATION: {
+                   POSTS: '文章',
+                   PAGES: '页面',
+                   CATEGORIES: '分类',
+                   TAGS: '标签',
+                   UNTITLED: '(未命名)',
+               },
+               ROOT_URL: '/',
+               CONTENT_URL: '/content.json',
+           };
+           window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+       })(window);
+       </script>
+       
+<script src="/js/insight.js"></script>
+
+
+
+</section>
+
+<section class="header-nav">
+    <ul class="header-nav">
+    <li class="nav-home">
+        <i class="fa-solid fa-house"></i>
+        <a href="/">首页</a>
+    </li>
+    <li class="nav-archives">
+        <i class="fa-solid fa-box-archive"></i>
+        <a href="/archives">归档</a>
+    </li>
+    <li class="nav-links">
+        <i class="fa-solid fa-handshake-simple"></i>
+        <a href="/links">友链</a>
+    </li>
+    <li class="nav-about">
+        <i class="fa-solid fa-user"></i>
+        <a href="/about">关于</a>
+    </li>
+</ul>
+</section>
+
+<section class="header-theme">
+    
+<link rel="stylesheet" href="/css/header/theme.css">
+
+<fieldset id="switch" class="radio">
+	<input name="switch" id="theme-light" type="radio">
+	<label for="theme-light">浅色</label>
+	<input name="switch" id="theme-dark" type="radio">
+	<label for="theme-dark">深色</label>
+	<input checked="" name="switch" id="theme-auto" type="radio">
+	<label for="theme-auto">自动</label>
+</fieldset>
+
+<script src="/js/theme.js"></script>
+
+</section>
+
+
+    <section class="header-social">
+        
+    <div class="social-icons">
+    
+        
+            <a target="_blank" rel="noopener" href="https://github.com/542113461052/" >
+                <svg t="1676188327749" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2739" width="200" height="200"><path d="M1020.8 529.6c0 110.4-32 209.6-97.6 300.8-65.6 88-147.2 150.4-251.2 185.6-12.8 3.2-22.4 0-25.6-3.2-6.4-6.4-9.6-12.8-9.6-19.2v-140.8c0-43.2-12.8-75.2-35.2-94.4 25.6-3.2 46.4-6.4 68.8-12.8 19.2-6.4 40-12.8 62.4-25.6s40-28.8 52.8-43.2c12.8-16 25.6-40 35.2-68.8s12.8-62.4 12.8-100.8c0-52.8-19.2-100.8-52.8-137.6 16-40 16-84.8-6.4-134.4-12.8-3.2-32 0-52.8 6.4-22.4 9.6-43.2 19.2-59.2 28.8l-25.6 16c-40-12.8-84.8-19.2-128-19.2s-88 6.4-128 19.2c-6.4-6.4-16-9.6-28.8-19.2-12.8-6.4-32-16-56-25.6-25.6-9.6-43.2-12.8-56-9.6-19.2 49.6-22.4 94.4-3.2 134.4-35.2 38.4-52.8 84.8-52.8 137.6 0 38.4 3.2 72 12.8 100.8 9.6 28.8 22.4 52.8 35.2 68.8 16 19.2 32 32 52.8 43.2s40 22.4 62.4 25.6c22.4 3.2 43.2 9.6 68.8 12.8-19.2 16-28.8 38.4-32 68.8-9.6 3.2-19.2 6.4-32 9.6-9.6 3.2-22.4 3.2-38.4 3.2s-28.8-6.4-43.2-16c-16-9.6-25.6-22.4-38.4-40-9.6-16-19.2-25.6-32-35.2-12.8-9.6-25.6-16-32-16l-8-1.6c-9.6 0-16 0-19.2 3.2-3.2 3.2-3.2 3.2-3.2 6.4s3.2 6.4 6.4 9.6l9.6 9.6 3.2 3.2c9.6 3.2 19.2 12.8 28.8 25.6 9.6 12.8 16 25.6 22.4 35.2l6.4 16c6.4 16 16 32 28.8 40 12.8 9.6 28.8 16 43.2 19.2 16 3.2 32 3.2 46.4 3.2s28.8 0 38.4-3.2l16-3.2v94.4c0 9.6-3.2 16-9.6 19.2-6.4 3.2-16 6.4-25.6 3.2-104-35.2-185.6-94.4-251.2-185.6C35.2 736 3.2 635.2 3.2 523.2c0-94.4 22.4-179.2 68.8-257.6S177.6 123.2 256 78.4 419.2 9.6 513.6 9.6 692.8 32 771.2 78.4s140.8 107.2 185.6 185.6c40 88 64 172.8 64 265.6z" fill="#888888" p-id="2740"></path></svg>
+            </a>
+        
+    
+        
+            <a target="_blank" rel="noopener" href="https://gitee.com/LiuMingGitee/" >
+                <svg t="1676188377547" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2891" width="200" height="200"><path d="M512 1024C230.4 1024 0 793.6 0 512S230.4 0 512 0s512 230.4 512 512-230.4 512-512 512z m259.2-569.6H480c-12.8 0-25.6 12.8-25.6 25.6v64c0 12.8 12.8 25.6 25.6 25.6h176c12.8 0 25.6 12.8 25.6 25.6v12.8c0 41.6-35.2 76.8-76.8 76.8h-240c-12.8 0-25.6-12.8-25.6-25.6V416c0-41.6 35.2-76.8 76.8-76.8h355.2c12.8 0 25.6-12.8 25.6-25.6v-64c0-12.8-12.8-25.6-25.6-25.6H416c-105.6 0-188.8 86.4-188.8 188.8V768c0 12.8 12.8 25.6 25.6 25.6h374.4c92.8 0 169.6-76.8 169.6-169.6v-144c0-12.8-12.8-25.6-25.6-25.6z" fill="#888888" p-id="2892"></path></svg>
+            </a>
+        
+    
+    </div>
+ 
+
+    </section>
+
+
+
+        </div>
+        <div id="content" >
+            <!-- 文章内容 -->
+<article class="article">
+        <div class="article-info">
+                <h1 class="article-title">网站分享 </h1>
+                <h2 class="author-title">
+                    <strong>liuming</strong>
+                </h2>
+                
+        </div>
+    <div class="article-content">
+        <!-- 预埋aplayer -->
+        
+            <div id="aplayer"></div>
+        
+            
+        <section class="markdown-body">
+            <div id="aplayer-data" data-url="https://music.163.com/song/media/outer/url?id=1475308845" data-name="爱上未来的你" data-artist="刘瑞琦" data-cover="https://i.imgtg.com/2023/01/23/SiJAl.jpg" data-lrc="[00:00.000] 作词 : 易家扬
+[00:00.760] 作曲 : 谭荣健
+[00:01.520]编曲：张少波
+[00:02.140]原唱：潘玮柏
+[00:11.140]我从前不相信
+[00:15.910]捉摸不定的爱情
+[00:20.960]那天的故事像城市传奇
+[00:25.350]也许神的安排
+[00:26.770]让我终于遇见你
+[00:30.450]你说要一点时间考虑
+[00:34.010]我很愿意把心快递给你
+[00:39.040]你让我把对爱的谜变成决心
+[00:50.060]爱上未来的你
+[00:52.460]为了一颗柔软的心
+[00:54.900]我被困在这爱情的迷雾里
+[00:58.790]想念着消失的你
+[01:00.420]爱上未来的你
+[01:02.520]我也没有时光机器
+[01:04.940]只能活在第一次的见面里
+[01:08.840]捍卫我们的约定
+[01:11.200]你是那么单纯一条美人鱼
+[01:12.640]活在惊心动魄城市里面悄悄呼吸
+[01:15.160]没有了力气
+[01:16.370]看着人海思考爱情谜题
+[01:18.110]找到你
+[01:19.320]爱上你
+[01:20.350]我的脑袋里面的大小回忆
+[01:22.620]没有留下空白
+[01:23.710]你占据了所有区域
+[01:25.170]我不需要谁定下的规矩说可不可以
+[01:27.810]我知道自己很爱你
+[01:40.930]我从前不相信
+[01:45.580]捉摸不定的爱情
+[01:51.030]那天的故事像城市传奇
+[01:55.210]也许神的安排
+[01:56.530]让我终于遇见你
+[02:00.330]你说要一点时间考虑
+[02:03.800]我很愿意把心快递给你
+[02:08.850]你让我把对爱的谜变成决心
+[02:19.820]爱上未来的你
+[02:22.560]为了一颗柔软的心
+[02:24.920]我被困在这爱情的迷雾里
+[02:28.740]想念着消失的你
+[02:30.370]爱上未来的你
+[02:32.450]我也没有时光机器
+[02:34.900]只能活在第一次的见面里
+[02:38.750]捍卫我们的约定
+[02:40.920]爱上未来的你
+[02:42.430]为了一颗柔软的心
+[02:45.220]我被困在这爱情的迷雾里
+[02:50.290]爱上未来的你
+[02:52.490]我也没有时光机器
+[02:54.940]只能活在第一次的见面里
+[02:58.790]捍卫我们的约定
+[03:04.160]捍卫我们的约定
+[03:09.300]捍卫我们的约定
+[03:12.180]制作人：张少波
+[03:12.680]吉他：牛子健
+[03:13.200]和声设计：张少波/刘瑞琦
+[03:13.600]和声：刘瑞琦
+[03:14.100]录音：张少波 @ A HIDDEN STUDIO
+[03:14.540]混音：赵靖BIGJ @ SBMS Beijing
+[03:14.970]母带：赵靖BIGJ @ SBMS Beijing
+[03:15.390]封面：tintindesign 汀町设计
+[03:15.960]企划：陈尚禔/潘俊/苏君仪
+[03:16.710]策划：陈莹
+[03:17.090]总监制：唐晶晶
+[03:17.630]特别企划：网易云音乐「复刻」
+[03:18.040]OP：LiKE Music/飞行石有限公司(Warner Chappell Music, Hong Kong
+Limited Taiwan Branch) SP：环球音乐版权/Warner Chappell Music Publishing Agency
+(Beijing) Ltd."></div>
+
+<h3 id="ʚ-学习-ɞ"><a href="#ʚ-学习-ɞ" class="headerlink" title="ʚ 学习 ɞ"></a>ʚ 学习 ɞ</h3><p><a target="_blank" rel="noopener" href="https://docs.qq.com/sheet/DRU5MWHZCTHFGQnhM?tab=qb1sze"><strong>最全公开课知识库</strong></a>: 由B站up主_碳十二_运维的课程推荐表格<br><a target="_blank" rel="noopener" href="https://www.r2coding.com/#/"><strong>r2coding</strong></a>: 程序羊大佬的资源分享网站<br><a target="_blank" rel="noopener" href="https://www.icourse163.org/"><strong>中国大学MOOC</strong></a>  </p>
+<h3 id="ʚ-影视-ɞ"><a href="#ʚ-影视-ɞ" class="headerlink" title="ʚ 影视 ɞ"></a>ʚ 影视 ɞ</h3><p><a target="_blank" rel="noopener" href="http://www.549.tv/"><strong>影视工厂</strong></a>: 观影第一站  </p>
+<h3 id="ʚ-工具-ɞ"><a href="#ʚ-工具-ɞ" class="headerlink" title="ʚ 工具 ɞ"></a>ʚ 工具 ɞ</h3><p><a target="_blank" rel="noopener" href="https://tools.thatwind.com/"><strong>那风工具箱</strong></a>: M3U8下载器 视频在线下载<br><a target="_blank" rel="noopener" href="https://cloudconvert.com/"><strong>CloudConvert</strong></a>: 文件格式转换<br><a target="_blank" rel="noopener" href="https://cn.office-converter.com/"><strong>在线转换器</strong></a>: 微软官方的文件转换网站<br><a target="_blank" rel="noopener" href="https://docsmall.com/"><strong>docsmall</strong></a>: 图片、GIF压缩工具、PDF压缩、合并、分割工具<br><a target="_blank" rel="noopener" href="https://xpdf.cn/"><strong>超级PDF</strong></a>: 简单强大的PDF在线处理工具<br><a target="_blank" rel="noopener" href="https://squoosh.app/"><strong>Squoosh</strong></a>: 图片压缩工具<br><a target="_blank" rel="noopener" href="https://c.runoob.com/"><strong>菜鸟工具</strong></a>: 不止于工具<br><a target="_blank" rel="noopener" href="https://undraw.co/"><strong>unDraw</strong> </a>: 开源插图<br><a target="_blank" rel="noopener" href="http://www.banshujiang.cn/"><strong>搬书匠</strong></a>: 编程书籍下载<br><a target="_blank" rel="noopener" href="https://zh.sa1lib.org/"><strong>数字图书馆</strong></a>: 免费下载书籍<br><a target="_blank" rel="noopener" href="https://www.i3zh.com/"><strong>i3综合社区</strong></a>: 搜罗全网黑科技应用<br><a target="_blank" rel="noopener" href="https://www.9eip.com/qqwzdhang"><strong>全球网址导航</strong></a>: 你要的网站都在这！  </p>
+<h3 id="ʚ-API-ɞ"><a href="#ʚ-API-ɞ" class="headerlink" title="ʚ API ɞ"></a>ʚ API ɞ</h3><p><a target="_blank" rel="noopener" href="https://api.aa1.cn/"><strong>免费API</strong></a>: 提供免费接口调用平台<br><a target="_blank" rel="noopener" href="https://api.paugram.com/"><strong>保罗｜API</strong></a><br><a target="_blank" rel="noopener" href="https://tool.oschina.net/apidocs#P"><strong>在线API文档</strong></a>:<br><a target="_blank" rel="noopener" href="https://overapi.com/"><strong>OverAPI</strong></a>: Collecting all the cheat sheets<br><a target="_blank" rel="noopener" href="https://pyecharts.org/#/zh-cn/intro"><strong>pyecharts</strong></a>: A Python Echarts Plotting Library built with love    </p>
+<h3 id="ʚ-图片-x2F-壁纸-ɞ"><a href="#ʚ-图片-x2F-壁纸-ɞ" class="headerlink" title="ʚ 图片/壁纸 ɞ"></a>ʚ 图片/壁纸 ɞ</h3><p><a target="_blank" rel="noopener" href="https://bz.zzzmh.cn/index"><strong>极简壁纸</strong></a>: 电脑桌面壁纸4K超高清壁纸<br><a target="_blank" rel="noopener" href="https://www.sitapix.com/"><strong>西田图像</strong></a>: 免版权图片素材/设计师素材/摄影图片<br><a target="_blank" rel="noopener" href="http://www.soutushenqi.com/home"><strong>搜图神器</strong></a>: 图片资源免费下载/不止于图片<br><a target="_blank" rel="noopener" href="http://www.netbian.com/"><strong>桌面壁纸</strong></a>: 电脑壁纸下载<br><a target="_blank" rel="noopener" href="https://www.10wallpaper.com/cn/"><strong>美化你的桌面</strong></a>: 高品质4K,5K高清壁纸下载网站</p>
+
+        </section>
+        <!-- 上一篇、下一篇 -->
+        <section class="near-page">
+            
+<link rel="stylesheet" href="/css/page/near-page.css">
+
+            
+                <div class="page-prev">
+    
+        <i class="fa-solid fa-chevron-left"></i>
+    
+    <a href="http://localhost:4000/2022/11/04/python/%E5%88%A9%E7%94%A8Scrpay%E7%88%AC%E5%8F%96%E5%BF%AB%E6%89%8B%E8%A7%86%E9%A2%91/">
+        <span class="hover-underline-animation"> 利用Scrpay爬取快手视频 </span></a>
+    
+</div>
+
+            
+            
+                <div class="page-next">
+    
+    <a href="http://localhost:4000/2022/11/02/ubuntu/Ubuntu%E4%B8%8B%E7%9A%84mysql%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">
+        <span class="hover-underline-animation"> ubuntu下的mysql安装与配置 </span></a>
+    
+        <i class="fa-solid fa-chevron-right"></i>
+    
+</div>
+
+            
+        </section>
+        <!-- 评论 -->
+        
+            
+                <section class="comment">
+                    
+    <!-- <div class="valine-comment"> -->
+        <div id="vcomments"></div>
+    <!-- </div> -->
+    <script type="text/javascript" src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: '1J31qkGh6RyoHg7VK404agJN-gzGzoHsz',
+            appKey: 'xXYRrJd5MBmFBpcDWjDQ3H6E',
+            avatar: 'mp',
+            placeholder: '说点什么吧',
+            pageSize: 10,
+            language: 'zh-cn',
+            
+                visitor: false,
+            
+            
+            recordIP: false
+            
+        })
+    </script>
+
+                </section>
+            
+        
+            </div>
+</article>
+
+<!-- 版权信息 -->
+
+    <script>
+        function setClipboardText(event){
+            let clipboardData = event.clipboardData || window.clipboardData;
+            if (!clipboardData) { return; }
+            event.preventDefault();
+            let text = window.getSelection().toString();
+            if (text) {
+              event.preventDefault();
+              var copyright = '\n\n'
+                              + '\n著作权归作者所有。'
+                              + '\n商业转载请联系作者获得授权，非商业转载请注明出处。'
+                              + '\n本文标题: 网站分享'
+                              + '\n作者: liuming'
+                              + '\n原文地址: http://localhost:4000/2022/11/03/%E5%88%86%E4%BA%AB/%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/'
+                              + '\n发布时间: 2022-11-03'
+              clipboardData.setData('text/plain', text + copyright);
+            }
+        };
+        var contents = document.getElementsByClassName("article");
+        // 监听文章内容的copy事件
+        contents[0].addEventListener('copy',function(e){
+            setClipboardText(e);
+        });
+    </script>
+
+        </div>
+        <div id="asider">
+            
+    <section class="asider-toc">
+        
+    <div class="toc-title">
+      <i class="fa-solid fa-rectangle-list"></i>
+        <span>TOC</span>
+        </div>
+        <div class="toc-body">
+            
+                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%CA%9A-%E5%AD%A6%E4%B9%A0-%C9%9E"><span class="toc-number">1.</span> <span class="toc-text">ʚ 学习 ɞ</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%CA%9A-%E5%BD%B1%E8%A7%86-%C9%9E"><span class="toc-number">2.</span> <span class="toc-text">ʚ 影视 ɞ</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%CA%9A-%E5%B7%A5%E5%85%B7-%C9%9E"><span class="toc-number">3.</span> <span class="toc-text">ʚ 工具 ɞ</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%CA%9A-API-%C9%9E"><span class="toc-number">4.</span> <span class="toc-text">ʚ API ɞ</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%CA%9A-%E5%9B%BE%E7%89%87-x2F-%E5%A3%81%E7%BA%B8-%C9%9E"><span class="toc-number">5.</span> <span class="toc-text">ʚ 图片&#x2F;壁纸 ɞ</span></a></li></ol>
+              
+        </div>
+    </div>
+
+    </section>
+
+        </div>
+        <div id="footer">
+            <!-- aplayer支持 -->
+
+    <section class="footer-aplayer">
+        <!-- 引入 js 文件 -->
+ 
+<script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" href="/css/plug/aplayer.css">
+
+    <script type="text/javascript">
+      const aplayer = document.querySelectorAll("#aplayer-data");
+      const ap = new APlayer({
+          container: document.getElementById('aplayer'),
+          // 文章
+          
+          
+          // 全局
+          lrcType: 1,
+          autoplay: false,
+          loop: false,
+          mutex: true,
+          order: 'list',
+          preload: 'auto',
+      });
+
+      initaplayer(aplayer);
+
+      function initaplayer(els) {
+        let elsArr = Array.from(els);
+        elsArr.forEach(el => {
+          ap.list.add(
+            [{
+              name: el.dataset.name,
+              artist: el.dataset.artist,
+              url: el.dataset.url,
+              lrc: el.dataset.lrc,
+              cover: el.dataset.cover,
+            }]
+          )
+      });
+    }
+
+
+    </script>
+ 
+    </section>
+
+
+<!-- dplayer支持 -->
+
+
+<!-- fancybox支持 -->
+
+    
+        <section class="fancybox">
+            <link rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css">
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js"> </script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('img').each(function() {
+      if ($(this).hasClass('author-avatar')){}//过滤掉头像
+      else{
+       if ($(this).parent().hasClass('fancybox')) return;
+       if ($(this).hasClass('nofancybox')) return;
+       var alt = this.alt;
+    //   if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+       $(this).wrap('<a href="' + ($(this).attr('data-src') == null ? this.src : $(this).attr('data-src')) + '" title="' + alt + '" class="fancybox"></a>');
+     }
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article');
+    });
+  });
+  $(document).ready(function() {
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']").attr('rel', 'gallery').fancybox({
+      helpers : {
+      title: { type: 'inside'}
+      }
+    });
+});
+</script>
+        </section>
+    
+
+
+<!-- 返回顶部 -->
+<section class="footer-back">
+    <div class="back" onclick="topFunction()">
+    <div id="back_top">
+      <i class="fa-solid fa-chevron-up"></i>
+      </div>
+</div>
+</section>
+
+        </div>
+    </div>
+    
+<script src="/js/back_top.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html >
+
+<head >
+    <meta charset="utf-8">
+    <!-- 总布局 -->
+    
+<link rel="stylesheet" href="/css/layout.css">
+ 
+    <!-- 图标库 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <!-- header -->
+    
+<link rel="stylesheet" href="/css/header/author.css">
+
+    
+<link rel="stylesheet" href="/css/header/nav.css">
+
+    
+<link rel="stylesheet" href="/css/header/search.css">
+
+    
+<link rel="stylesheet" href="/css/header/social.css">
+
+     
+        
+<link rel="stylesheet" href="/css/header/toc.css">
+
+     
+
+    <!-- footer -->
+    
+<link rel="stylesheet" href="/css/footer/back_top.css">
+
+    
+<link rel="stylesheet" href="/css/page/content.css">
+
+    
+<link rel="stylesheet" href="/css/page/categories.css">
+
+
+    <!-- highlight.js 代码高亮 -->
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/atom-one-dark.css">
+    
+    
+    <!-- markdown -->
+    
+<link rel="stylesheet" href="/css/page/markdown.css">
+
+    <!-- 
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+ -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+    <!-- 站点图标 -->
+    
+        <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body >
+    
+        
+<link rel="stylesheet" href="/css/page/banner.css">
+
+        <div id="banner" style="background-image: url('https://i.imgtg.com/2023/01/21/Sot9s.jpg'); ">
+			<h1 class="hitokoto"></h1>
+			<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	        
+<script src="/js/hitokoto.js"></script>
+
+        </div>
+    
+    <div id="main">
+        <div id="header">
+            <section class="header-author">
+    <div class="author">
+    
+    <img src="https://i.imgtg.com/2023/01/21/SqAtX.jpg" class="author-avatar" alt="liuming">
+    
+    
+    <h2 class="author-name">liuming</h2>
+    
+    
+    <p class="author-desc">为之则易 不为则难</p>
+    
+</div>
+</section>
+<section class="header-search">
+    <!-- <header class="header" itemscope itemtype="http://schema.org/WPHeader"> -->
+      <div class="search" id="search-form-wrap">
+      
+            <form class="search-form sidebar-form">
+                  <div class="input-group">
+                  <input type="text" class="search-form-input form-control" placeholder="搜索" />
+                  <!-- <span class="input-group-btn"> -->
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                  <!-- </span> -->
+                  </div>
+            </form>
+            <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                  <div class="ins-input-wrapper">
+                  <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+                  <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  </div>
+                  <div class="ins-section-wrapper">
+                  <div class="ins-section-container"></div>
+                  </div>
+            </div>
+            </div>                
+      
+      </div>
+<!-- </header> -->
+<script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+
+   <script>
+       (function (window) {
+           var INSIGHT_CONFIG = {
+               TRANSLATION: {
+                   POSTS: '文章',
+                   PAGES: '页面',
+                   CATEGORIES: '分类',
+                   TAGS: '标签',
+                   UNTITLED: '(未命名)',
+               },
+               ROOT_URL: '/',
+               CONTENT_URL: '/content.json',
+           };
+           window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+       })(window);
+       </script>
+       
+<script src="/js/insight.js"></script>
+
+
+
+</section>
+
+<section class="header-nav">
+    <ul class="header-nav">
+    <li class="nav-home">
+        <i class="fa-solid fa-house"></i>
+        <a href="/">首页</a>
+    </li>
+    <li class="nav-archives">
+        <i class="fa-solid fa-box-archive"></i>
+        <a href="/archives">归档</a>
+    </li>
+    <li class="nav-links">
+        <i class="fa-solid fa-handshake-simple"></i>
+        <a href="/links">友链</a>
+    </li>
+    <li class="nav-about">
+        <i class="fa-solid fa-user"></i>
+        <a href="/about">关于</a>
+    </li>
+</ul>
+</section>
+
+<section class="header-theme">
+    
+<link rel="stylesheet" href="/css/header/theme.css">
+
+<fieldset id="switch" class="radio">
+	<input name="switch" id="theme-light" type="radio">
+	<label for="theme-light">浅色</label>
+	<input name="switch" id="theme-dark" type="radio">
+	<label for="theme-dark">深色</label>
+	<input checked="" name="switch" id="theme-auto" type="radio">
+	<label for="theme-auto">自动</label>
+</fieldset>
+
+<script src="/js/theme.js"></script>
+
+</section>
+
+
+    <section class="header-social">
+        
+    <div class="social-icons">
+    
+        
+            <a target="_blank" rel="noopener" href="https://github.com/542113461052/" >
+                <svg t="1676188327749" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2739" width="200" height="200"><path d="M1020.8 529.6c0 110.4-32 209.6-97.6 300.8-65.6 88-147.2 150.4-251.2 185.6-12.8 3.2-22.4 0-25.6-3.2-6.4-6.4-9.6-12.8-9.6-19.2v-140.8c0-43.2-12.8-75.2-35.2-94.4 25.6-3.2 46.4-6.4 68.8-12.8 19.2-6.4 40-12.8 62.4-25.6s40-28.8 52.8-43.2c12.8-16 25.6-40 35.2-68.8s12.8-62.4 12.8-100.8c0-52.8-19.2-100.8-52.8-137.6 16-40 16-84.8-6.4-134.4-12.8-3.2-32 0-52.8 6.4-22.4 9.6-43.2 19.2-59.2 28.8l-25.6 16c-40-12.8-84.8-19.2-128-19.2s-88 6.4-128 19.2c-6.4-6.4-16-9.6-28.8-19.2-12.8-6.4-32-16-56-25.6-25.6-9.6-43.2-12.8-56-9.6-19.2 49.6-22.4 94.4-3.2 134.4-35.2 38.4-52.8 84.8-52.8 137.6 0 38.4 3.2 72 12.8 100.8 9.6 28.8 22.4 52.8 35.2 68.8 16 19.2 32 32 52.8 43.2s40 22.4 62.4 25.6c22.4 3.2 43.2 9.6 68.8 12.8-19.2 16-28.8 38.4-32 68.8-9.6 3.2-19.2 6.4-32 9.6-9.6 3.2-22.4 3.2-38.4 3.2s-28.8-6.4-43.2-16c-16-9.6-25.6-22.4-38.4-40-9.6-16-19.2-25.6-32-35.2-12.8-9.6-25.6-16-32-16l-8-1.6c-9.6 0-16 0-19.2 3.2-3.2 3.2-3.2 3.2-3.2 6.4s3.2 6.4 6.4 9.6l9.6 9.6 3.2 3.2c9.6 3.2 19.2 12.8 28.8 25.6 9.6 12.8 16 25.6 22.4 35.2l6.4 16c6.4 16 16 32 28.8 40 12.8 9.6 28.8 16 43.2 19.2 16 3.2 32 3.2 46.4 3.2s28.8 0 38.4-3.2l16-3.2v94.4c0 9.6-3.2 16-9.6 19.2-6.4 3.2-16 6.4-25.6 3.2-104-35.2-185.6-94.4-251.2-185.6C35.2 736 3.2 635.2 3.2 523.2c0-94.4 22.4-179.2 68.8-257.6S177.6 123.2 256 78.4 419.2 9.6 513.6 9.6 692.8 32 771.2 78.4s140.8 107.2 185.6 185.6c40 88 64 172.8 64 265.6z" fill="#888888" p-id="2740"></path></svg>
+            </a>
+        
+    
+        
+            <a target="_blank" rel="noopener" href="https://gitee.com/LiuMingGitee/" >
+                <svg t="1676188377547" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2891" width="200" height="200"><path d="M512 1024C230.4 1024 0 793.6 0 512S230.4 0 512 0s512 230.4 512 512-230.4 512-512 512z m259.2-569.6H480c-12.8 0-25.6 12.8-25.6 25.6v64c0 12.8 12.8 25.6 25.6 25.6h176c12.8 0 25.6 12.8 25.6 25.6v12.8c0 41.6-35.2 76.8-76.8 76.8h-240c-12.8 0-25.6-12.8-25.6-25.6V416c0-41.6 35.2-76.8 76.8-76.8h355.2c12.8 0 25.6-12.8 25.6-25.6v-64c0-12.8-12.8-25.6-25.6-25.6H416c-105.6 0-188.8 86.4-188.8 188.8V768c0 12.8 12.8 25.6 25.6 25.6h374.4c92.8 0 169.6-76.8 169.6-169.6v-144c0-12.8-12.8-25.6-25.6-25.6z" fill="#888888" p-id="2892"></path></svg>
+            </a>
+        
+    
+    </div>
+ 
+
+    </section>
+
+
+
+        </div>
+        <div id="content" >
+            <!-- 文章内容 -->
+<article class="article">
+        <div class="article-info">
+                <h1 class="article-title">网易云音乐Api </h1>
+                <h2 class="author-title">
+                    <strong>liuming</strong>
+                </h2>
+                
+        </div>
+    <div class="article-content">
+        <!-- 预埋aplayer -->
+        
+            <div id="aplayer"></div>
+        
+            
+        <section class="markdown-body">
+            <div id="aplayer-data" data-url="http://music.163.com/song/media/outer/url?id=1928419759" data-name="恋爱频率" data-artist="Sasablue" data-cover="https://i.imgtg.com/2023/01/23/SigYP.jpg" data-lrc="[00:00.000] 作词 : 卓泽槟
+[00:01.000] 作曲 : 卓泽槟
+[00:02.000] 编曲 : 正好儿
+[00:03.000] 制作人 : BackToBand赵楚峰
+[00:17.67] Tell me why想不透
+[00:20.97]你让我多么心动
+[00:24.51]遇见你是生命中
+[00:26.91]最美的彩虹
+[00:30.81]冥冥之中你的回眸
+[00:33.63]最美的镜头
+[00:36.09]想跟你走
+[00:37.59]想拉着你的手
+[00:40.32]可好像显得太冲动
+[00:44.25]已经幻想靠在怀里
+[00:47.64]已经幻想是我依偎着你
+[00:50.25]你却和我保持适当距离
+[00:53.04] ok明白是我太过着急
+[00:57.33]恋爱频率开启
+[01:00.75]我会一点一点想你
+[01:04.14]一天一遍放在心里
+[01:07.53]等到那天终于靠近
+[01:10.83]脸红害羞就深呼吸
+[01:14.28]我会一点一点想你
+[01:17.64]一遍一遍慢慢累积
+[01:21.00]累积成永恒的记忆
+[01:24.27]想够一万遍就在一起
+[01:41.79]冥冥之中你的回眸
+[01:44.64]最美的镜头
+[01:47.13]想跟你走
+[01:48.60]想拉着你的手
+[01:51.24]可好像显得太冲动
+[01:55.26]已经幻想靠在怀里
+[01:58.65]已经幻想是我依偎着你
+[02:01.23]你却和我保持适当距离
+[02:04.02] ok明白是我太过着急
+[02:08.31]恋爱频率开启
+[02:11.67]我会一点一点想你
+[02:15.09]一天一遍放在心里
+[02:18.54]等到那天终于靠近
+[02:21.84]脸红害羞就深呼吸
+[02:25.26]我会一点一点想你
+[02:28.62]一遍一遍慢慢累积
+[02:32.01]累积成永恒的记忆
+[02:35.34]想够一万遍就在一起
+[02:41.91]我会一点一点想你
+[02:45.51]一天一遍放在心里
+[02:48.96]等到那天终于靠近
+[02:52.26]脸红害羞就深呼吸
+[02:55.68]我会一点一点想你
+[02:59.04]一遍一遍慢慢累积
+[03:02.46]累积成永恒的记忆
+[03:05.67]想够一万遍就在一起
+[03:06.380] 营销 : 大声密谋
+[03:07.693] 总监制 : 陈国威 Andrew Chan@索尼音乐
+[03:09.006] 和声 : Sasablue
+[03:10.319] 录音 : Sleepinkid@MaiMaiMusic
+[03:11.632] 混音 : 冯兆麟@西安魔音音乐
+[03:12.945] 母带 : 冯兆麟@西安魔音音乐
+[03:14.258] 封面 : 木子日尧丝内
+[03:15.571] 文案 : 枇杷
+[03:16.884] 艺人统筹 : 乌云/BackToBand赵楚峰
+[03:18.197] 项目统筹 : 杰森/BackToBand赵楚峰/桑玉泓
+[03:19.510] （未经著作权人许可，不得翻唱、翻录或使用）"></div>
+<h3 id="搜索歌曲"><a href="#搜索歌曲" class="headerlink" title="搜索歌曲"></a>搜索歌曲</h3><p><strong>URL</strong>：<a target="_blank" rel="noopener" href="https://music.163.com/api/search/pc">https://music.163.com/api/search/pc</a><br><strong>请求方式</strong>：GET<br><strong>参数</strong><br><strong>s</strong>：关键词<br><strong>offset</strong>：偏移量<br><strong>limit</strong>：获取歌曲数<br><strong>type</strong>：类型(歌曲：1、专辑：10、歌手：100、歌单：1000、用户：1002、MV：1004、歌词：1006、主播电台：1009)<br>例如，通过歌曲名获取歌曲信息。</p>
+<figure class="highlight pgsql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">GET</span> https://music<span class="hljs-number">.163</span>.com/api/<span class="hljs-keyword">search</span>/pc?s=住在天狼星的那个人&amp;<span class="hljs-keyword">offset</span>=<span class="hljs-number">0</span>&amp;<span class="hljs-keyword">limit</span>=<span class="hljs-number">1</span>&amp;<span class="hljs-keyword">type</span>=<span class="hljs-number">1</span><br></code></pre></td></tr></tbody></table></figure>
+<p>返回JSON</p>
+<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">{</span><br>  <span class="hljs-attr">"result"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>    <span class="hljs-attr">"songs"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>      <span class="hljs-punctuation">{</span><br>        <span class="hljs-comment">// 歌曲名</span><br>        <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"住在天狼星的那個人"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">// 歌曲ID</span><br>        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">545009030</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"position"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">5</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"alias"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"status"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"fee"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">8</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"copyrightId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">405025</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"disc"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"1"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"no"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">5</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">//歌手信息</span><br>        <span class="hljs-attr">"artists"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">{</span><br>            <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"OHMYMEITING"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">32765993</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"picId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"img1v1Id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"briefDesc"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"picUrl"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"img1v1Url"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"albumSize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"alias"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"trans"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"musicSize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><br>        <span class="hljs-punctuation">}</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">//专辑信息</span><br>        <span class="hljs-attr">"album"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>          <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"別擔心！我不是壞人"</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">37909372</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"idStr"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"37909372"</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"专辑"</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"size"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">6</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"picId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">109951164544594940</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"blurPicUrl"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://p1.music.126.net/VZRyjdY2QWC-MpjXrTaF1g==/109951164544594940.jpg"</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"companyId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"pic"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">109951164544594940</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"picUrl"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://p1.music.126.net/VZRyjdY2QWC-MpjXrTaF1g==/109951164544594940.jpg"</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"publishTime"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1520524800000</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"description"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"tags"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"company"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"黃美婷 Meiting"</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"briefDesc"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-comment">//......</span><br>          <span class="hljs-attr">"songs"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"alias"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"status"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"copyrightId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">405025</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"commentThreadId"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"R_AL_3_37909372"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">//   歌手信息（同上）</span><br>          <span class="hljs-attr">"artists"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">{</span><br>            <span class="hljs-punctuation">}</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"picId_str"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"109951164544594940"</span><br>        <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">//   ......</span><br>        <span class="hljs-comment">//   评论线程ID</span><br>        <span class="hljs-attr">"commentThreadId"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"R_SO_4_545009030"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">//   MVID,无MV的为0</span><br>        <span class="hljs-attr">"mvid"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"bMusic"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>          <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1431842976</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"size"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4246927</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"extension"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"mp3"</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"sr"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">44100</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"dfsId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"bitrate"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">128000</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"playTime"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">265360</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"volumeDelta"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">-42316</span><br>        <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">// 此音频链接已失效，不过有其他方法获取</span><br>        <span class="hljs-attr">"mp3Url"</span><span class="hljs-punctuation">:</span> <span class="hljs-comment">//省略,</span><br>      <span class="hljs-punctuation">}</span><br>    <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">//歌曲数量</span><br>    <span class="hljs-attr">"songCount"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">13</span><br>  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"code"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">200</span><br><span class="hljs-punctuation">}</span><br></code></pre></td></tr></tbody></table></figure>
+<h3 id="获取歌曲信息"><a href="#获取歌曲信息" class="headerlink" title="获取歌曲信息"></a>获取歌曲信息</h3><p><strong>URL</strong>：<a target="_blank" rel="noopener" href="https://api.paugram.com/netease/">https://api.paugram.com/netease/</a><br><strong>请求方式</strong>：GET<br><strong>参数</strong><br><strong>id</strong>：歌曲ID<br>例如，通过ID获取歌曲信息。</p>
+<figure class="highlight awk"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">GET https:<span class="hljs-regexp">//</span>api.paugram.com<span class="hljs-regexp">/netease/</span>?id=<span class="hljs-number">545009030</span><br></code></pre></td></tr></tbody></table></figure>
+<p>返回JSON</p>
+<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">{</span><br>    <span class="hljs-comment">// 歌曲ID</span><br>    <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span><span class="hljs-string">"545009030"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">//歌曲名</span><br>    <span class="hljs-attr">"title"</span><span class="hljs-punctuation">:</span><span class="hljs-string">"住在天狼星的那個人"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// 歌手</span><br>    <span class="hljs-attr">"artist"</span><span class="hljs-punctuation">:</span><span class="hljs-string">"OHMYMEITING"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// 专辑</span><br>    <span class="hljs-attr">"album"</span><span class="hljs-punctuation">:</span><span class="hljs-string">"別擔心！我不是壞人"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// 歌曲封面</span><br>    <span class="hljs-attr">"cover"</span><span class="hljs-punctuation">:</span><span class="hljs-string">"https://p2.music.126.net/VZRyjdY2QWC-MpjXrTaF1g==/109951164544594940.jpg?param=250y250"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// 歌词</span><br>    <span class="hljs-attr">"lyric"</span><span class="hljs-punctuation">:</span><span class="hljs-string">"[00:00.000] 作词 : 黃美婷 Meiting\n[00:00.544] 作曲 : 黃美婷 Meiting\n[00:01.89]在望无边际的天空上面\n[00:07.11]一闪一闪众多星星里面\n[00:12.28]还是他最耀眼\n[00:17.41]亮得我都睁不开眼\n[00:22.63]我和他之间有几个光年?\n[00:27.73]乘坐太空船赶走了思念\n[00:32.99]看见他的笑颜\n[00:38.10]时间停止在这瞬间\n[00:42.68]住在天狼星的那个人\n[00:45.63]那拐走我的心的人\n[00:48.14]他天天叫我烦恼郁闷\n[00:52.63]明明感觉是对的人\n[00:55.23]但谁也不愿先出声\n[00:58.43]别做无谓的抗争\n[01:03.36]住在天狼星的那个人\n[01:06.19]想趁这机会问一问\n[01:08.72]你心里到底有没有我们?\n[01:13.29]明明你就是对的人\n[01:16.67]你要不要认真\n[01:18.86]给我一个温柔的吻\n[01:21.03]让我们一起私奔\n[01:45.19]漫步星环又绕了一大圈\n[01:50.46]感觉就好像过了一千年\n[01:55.55]远处你的 指尖\n[02:00.60]什么时候才能再碰见\n[02:05.29]住在天狼星的那个人\n[02:08.06]那拐走我的心的人\n[02:10.77]他天天叫我烦恼郁闷\n[02:15.23]明明感觉是对的人\n[02:17.92]但谁也不愿先出声\n[02:20.99]别做无谓的抗争\n[02:25.94]住在天狼星的那个人\n[02:28.75]想趁这机会问一问\n[02:31.44]你心里到底有没有我们?\n[02:35.84]明明你就是对的人\n[02:39.31]你要不要认真\n[02:41.42]给我一个温柔的吻\n[02:43.66]让我们一起私奔\n[02:51.93]就请你不要再答非所问\n[02:56.46]还在犹豫什么?\n[02:59.70]让我们的心布满了星辰\n[03:09.82]住在天狼星的那个人\n[03:12.60]那拐走我的心的人\n[03:15.26]他天天叫我烦恼郁闷\n[03:19.82]明明感觉是对的人\n[03:22.34]但谁也不愿先出声\n[03:25.56]别做无谓的抗争\n[03:30.45]住在天狼星的那个人\n[03:33.32]想趁这机会问一问\n[03:35.90]你心里到底有没有我们?\n[03:40.40]明明你就是对的人\n[03:43.87]你要不要认真\n[03:45.90]给我一个温柔的吻\n[03:48.20]让我们一起私奔\n"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"sub_lyric"</span><span class="hljs-punctuation">:</span><span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// 歌曲链接（可以使用）</span><br>    <span class="hljs-attr">"link"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"省略"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"served"</span><span class="hljs-punctuation">:</span><span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"cached"</span><span class="hljs-punctuation">:</span><span class="hljs-literal"><span class="hljs-keyword">true</span></span><br><span class="hljs-punctuation">}</span><br></code></pre></td></tr></tbody></table></figure>
+<p><strong>URL</strong>：<a target="_blank" rel="noopener" href="https://music.163.com/api/song/detail/">https://music.163.com/api/song/detail/</a><br><strong>请求方式</strong>：GET<br><strong>参数</strong><br><strong>id</strong>：歌曲ID<br><strong>ids</strong>：歌曲ID<br>例如，通过ID获取歌曲信息。</p>
+<figure class="highlight asciidoc"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc">GET <span class="hljs-link">https://music.163.com/api/song/detail/?id=545009030&amp;ids=</span>[<span class="hljs-string">545009030</span>]<br></code></pre></td></tr></tbody></table></figure>
+<p>返回JSON</p>
+<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><code class="hljs JSON"><span class="hljs-punctuation">{</span><br>  <span class="hljs-attr">"songs"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>    <span class="hljs-comment">// 歌曲信息</span><br>    <span class="hljs-punctuation">{</span><br>      <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"住在天狼星的那個人"</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">545009030</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"position"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">5</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"alias"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"status"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"fee"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">8</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"copyrightId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">405025</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"disc"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"1"</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"no"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">5</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">//   歌手信息</span><br>      <span class="hljs-attr">"artists"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>        <span class="hljs-punctuation">{</span><br>          <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"OHMYMEITING"</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">32765993</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"picId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"img1v1Id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"briefDesc"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"picUrl"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"img1v1Url"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"albumSize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"alias"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"trans"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"musicSize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"topicPerson"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><br>        <span class="hljs-punctuation">}</span><br>      <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">//   专辑信息</span><br>      <span class="hljs-attr">"album"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>        <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"別擔心！我不是壞人"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">37909372</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"专辑"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"size"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">6</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"picId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">109951164544594940</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"blurPicUrl"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://p2.music.126.net/VZRyjdY2QWC-MpjXrTaF1g==/109951164544594940.jpg"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"companyId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"pic"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">109951164544594940</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"picUrl"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://p2.music.126.net/VZRyjdY2QWC-MpjXrTaF1g==/109951164544594940.jpg"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"publishTime"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1520524800000</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"description"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"tags"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"company"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"黃美婷 Meiting"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"briefDesc"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">// ......</span><br>        <span class="hljs-attr">"songs"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"alias"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"status"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"copyrightId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">405025</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"commentThreadId"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"R_AL_3_37909372"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">// 歌手信息（同上）</span><br>        <span class="hljs-attr">"artists"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">{</span><br>        <span class="hljs-punctuation">}</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"subType"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"录音室版"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"transName"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"onSale"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"mark"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"gapless"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"dolbyMark"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"picId_str"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"109951164544594940"</span><br>      <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"starred"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"popularity"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">100</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"score"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">100</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"starredNum"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"duration"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">265360</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"playedNum"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"dayPlays"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"hearTime"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"sqMusic"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>        <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1431842972</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"size"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">30465851</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"extension"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"flac"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"sr"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">44100</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"dfsId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"bitrate"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">918476</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"playTime"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">265360</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"volumeDelta"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">-42316</span><br>      <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-comment">//   ......</span><br>    <span class="hljs-comment">//   评论线程ID</span><br>    <span class="hljs-attr">"commentThreadId"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"R_SO_4_545009030"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">//   MVID,无MV的为0</span><br>      <span class="hljs-attr">"mvid"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">//   ......</span><br>    <span class="hljs-punctuation">}</span><br>  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"equalizers"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"code"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">200</span><br><span class="hljs-punctuation">}</span><br></code></pre></td></tr></tbody></table></figure>
+<h3 id="获取歌曲音频"><a href="#获取歌曲音频" class="headerlink" title="获取歌曲音频"></a>获取歌曲音频</h3><p><strong>URL</strong>：<a target="_blank" rel="noopener" href="http://music.163.com/song/media/outer/url">http://music.163.com/song/media/outer/url</a><br><strong>请求方式</strong>：GET<br><strong>参数</strong><br><strong>id</strong>：歌曲ID<br>例如，通过ID获取歌曲音频。</p>
+<figure class="highlight awk"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">GET http:<span class="hljs-regexp">//mu</span>sic.<span class="hljs-number">163</span>.com<span class="hljs-regexp">/song/m</span>edia<span class="hljs-regexp">/outer/u</span>rl?id=<span class="hljs-number">545009030</span><br></code></pre></td></tr></tbody></table></figure>
+<p>实际真实链接，藏在响应头中</p>
+<figure class="highlight xml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs xml">HTTP/1.1 302 Found<br><span class="hljs-comment">&lt;!-- ...... --&gt;</span><br><span class="hljs-comment">&lt;!-- 音频链接 --&gt;</span><br>Location: http://m10.music.126.net/20230204171018/eed3b1393a386733a31c23d226b278f0/ymusic/3abf/cf7f/dbc9/99f5cc09577d89e2aab71d0822b3e567.mp3<br></code></pre></td></tr></tbody></table></figure>
+<h3 id="获取歌曲歌词"><a href="#获取歌曲歌词" class="headerlink" title="获取歌曲歌词"></a>获取歌曲歌词</h3><p><strong>URL</strong>：<a target="_blank" rel="noopener" href="http://music.163.com/api/song/media">http://music.163.com/api/song/media</a><br><strong>请求方式</strong>：GET<br><strong>参数</strong><br><strong>id</strong>：歌曲ID<br>例如，通过ID获取歌曲歌词。</p>
+<figure class="highlight awk"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">GET http:<span class="hljs-regexp">//mu</span>sic.<span class="hljs-number">163</span>.com<span class="hljs-regexp">/api/</span>song/media?id=<span class="hljs-number">545009030</span><br></code></pre></td></tr></tbody></table></figure>
+<p>返回JSON</p>
+<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs JSON"><span class="hljs-punctuation">{</span><br>    <span class="hljs-attr">"songStatus"</span><span class="hljs-punctuation">:</span><span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"lyricVersion"</span><span class="hljs-punctuation">:</span><span class="hljs-number">12</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"lyric"</span><span class="hljs-punctuation">:</span><span class="hljs-string">"\n[00:01.89]在望无边际的天空上面\n[00:07.11]一闪一闪众多星星里面\n[00:12.28]还是他最耀眼\n[00:17.41]亮得我都睁不开眼\n[00:22.63]我和他之间有几个光年?\n[00:27.73]乘坐太空船赶走了思念\n[00:32.99]看见他的笑颜\n[00:38.10]时间停止在这瞬间\n[00:42.68]住在天狼星的那个人\n[00:45.63]那拐走我的心的人\n[00:48.14]他天天叫我烦恼郁闷\n[00:52.63]明明感觉是对的人\n[00:55.23]但谁也不愿先出声\n[00:58.43]别做无谓的抗争\n[01:03.36]住在天狼星的那个人\n[01:06.19]想趁这机会问一问\n[01:08.72]你心里到底有没有我们?\n[01:13.29]明明你就是对的人\n[01:16.67]你要不要认真\n[01:18.86]给我一个温柔的吻\n[01:21.03]让我们一起私奔\n[01:45.19]漫步星环又绕了一大圈\n[01:50.46]感觉就好像过了一千年\n[01:55.55]远处你的 指尖\n[02:00.60]什么时候才能再碰见\n[02:05.29]住在天狼星的那个人\n[02:08.06]那拐走我的心的人\n[02:10.77]他天天叫我烦恼郁闷\n[02:15.23]明明感觉是对的人\n[02:17.92]但谁也不愿先出声\n[02:20.99]别做无谓的抗争\n[02:25.94]住在天狼星的那个人\n[02:28.75]想趁这机会问一问\n[02:31.44]你心里到底有没有我们?\n[02:35.84]明明你就是对的人\n[02:39.31]你要不要认真\n[02:41.42]给我一个温柔的吻\n[02:43.66]让我们一起私奔\n[02:51.93]就请你不要再答非所问\n[02:56.46]还在犹豫什么?\n[02:59.70]让我们的心布满了星辰\n[03:09.82]住在天狼星的那个人\n[03:12.60]那拐走我的心的人\n[03:15.26]他天天叫我烦恼郁闷\n[03:19.82]明明感觉是对的人\n[03:22.34]但谁也不愿先出声\n[03:25.56]别做无谓的抗争\n[03:30.45]住在天狼星的那个人\n[03:33.32]想趁这机会问一问\n[03:35.90]你心里到底有没有我们?\n[03:40.40]明明你就是对的人\n[03:43.87]你要不要认真\n[03:45.90]给我一个温柔的吻\n[03:48.20]让我们一起私奔\n"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"code"</span><span class="hljs-punctuation">:</span><span class="hljs-number">200</span><br><span class="hljs-punctuation">}</span><br></code></pre></td></tr></tbody></table></figure>
+<p><strong>URL</strong>：<a target="_blank" rel="noopener" href="http://music.163.com/api/song/lyric">http://music.163.com/api/song/lyric</a><br><strong>请求方式</strong>：GET<br><strong>参数</strong><br><strong>id</strong>：歌曲ID<br><strong>lv</strong>：-1<br><strong>kv</strong>：-1<br>例如，通过ID获取歌曲歌词。</p>
+<figure class="highlight apache"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">GET</span> https://music.<span class="hljs-number">163</span>.com/api/song/lyric?id=<span class="hljs-number">545009030</span>&amp;lv=-<span class="hljs-number">1</span>&amp;kv=-<span class="hljs-number">1</span><br></code></pre></td></tr></tbody></table></figure>
+<p>返回JSON</p>
+<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs JSON"><span class="hljs-punctuation">{</span><br>  <span class="hljs-attr">"sgc"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"sfy"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"qfy"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"lyricUser"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>    <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3731571</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"status"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">99</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"demand"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"userid"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">258783108</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"nickname"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"王小埋"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"uptime"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1535522436946</span><br>  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"lrc"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>    <span class="hljs-attr">"version"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">17</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"lyric"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"[00:00.000] 作词 : 黃美婷 Meiting\n[00:00.544] 作曲 : 黃美婷 Meiting\n[00:01.89]在望无边际的天空上面\n[00:07.11]一闪一闪众多星星里面\n[00:12.28]还是他最耀眼\n[00:17.41]亮得我都睁不开眼\n[00:22.63]我和他之间有几个光年?\n[00:27.73]乘坐太空船赶走了思念\n[00:32.99]看见他的笑颜\n[00:38.10]时间停止在这瞬间\n[00:42.68]住在天狼星的那个人\n[00:45.63]那拐走我的心的人\n[00:48.14]他天天叫我烦恼郁闷\n[00:52.63]明明感觉是对的人\n[00:55.23]但谁也不愿先出声\n[00:58.43]别做无谓的抗争\n[01:03.36]住在天狼星的那个人\n[01:06.19]想趁这机会问一问\n[01:08.72]你心里到底有没有我们?\n[01:13.29]明明你就是对的人\n[01:16.67]你要不要认真\n[01:18.86]给我一个温柔的吻\n[01:21.03]让我们一起私奔\n[01:45.19]漫步星环又绕了一大圈\n[01:50.46]感觉就好像过了一千年\n[01:55.55]远处你的 指尖\n[02:00.60]什么时候才能再碰见\n[02:05.29]住在天狼星的那个人\n[02:08.06]那拐走我的心的人\n[02:10.77]他天天叫我烦恼郁闷\n[02:15.23]明明感觉是对的人\n[02:17.92]但谁也不愿先出声\n[02:20.99]别做无谓的抗争\n[02:25.94]住在天狼星的那个人\n[02:28.75]想趁这机会问一问\n[02:31.44]你心里到底有没有我们?\n[02:35.84]明明你就是对的人\n[02:39.31]你要不要认真\n[02:41.42]给我一个温柔的吻\n[02:43.66]让我们一起私奔\n[02:51.93]就请你不要再答非所问\n[02:56.46]还在犹豫什么?\n[02:59.70]让我们的心布满了星辰\n[03:09.82]住在天狼星的那个人\n[03:12.60]那拐走我的心的人\n[03:15.26]他天天叫我烦恼郁闷\n[03:19.82]明明感觉是对的人\n[03:22.34]但谁也不愿先出声\n[03:25.56]别做无谓的抗争\n[03:30.45]住在天狼星的那个人\n[03:33.32]想趁这机会问一问\n[03:35.90]你心里到底有没有我们?\n[03:40.40]明明你就是对的人\n[03:43.87]你要不要认真\n[03:45.90]给我一个温柔的吻\n[03:48.20]让我们一起私奔\n"</span><br>  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"klyric"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>    <span class="hljs-attr">"version"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"lyric"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><br>  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"code"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">200</span><br><span class="hljs-punctuation">}</span><br></code></pre></td></tr></tbody></table></figure>
+<h3 id="获取评论"><a href="#获取评论" class="headerlink" title="获取评论"></a>获取评论</h3><p><strong>URL</strong>：<a target="_blank" rel="noopener" href="http://music.163.com/api/v1/resource/comments/%7B%E8%AF%84%E8%AE%BA%E7%BA%BF%E7%A8%8BID%7D">http://music.163.com/api/v1/resource/comments/{评论线程ID}</a><br><strong>请求方式</strong>：GET<br><strong>线程ID</strong><br><strong>mv</strong>：R_MV_5_{mvid}<br><strong>歌曲</strong>：R_SO_4_{歌曲id}<br><strong>参数</strong><br><strong>offset</strong>：偏移量<br><strong>limit</strong>：获取评论数<br>例如，通过ID获取歌曲评论。</p>
+<figure class="highlight awk"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">GET http:<span class="hljs-regexp">//mu</span>sic.<span class="hljs-number">163</span>.com<span class="hljs-regexp">/api/</span>v1<span class="hljs-regexp">/resource/</span>comments/R_SO_4_545009030?limit=<span class="hljs-number">1</span>&amp;offset=<span class="hljs-number">0</span><br></code></pre></td></tr></tbody></table></figure>
+<p>返回JSON</p>
+<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><code class="hljs JSON"><span class="hljs-punctuation">{</span><br>  <span class="hljs-attr">"isMusician"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"userId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">-1</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"topComments"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"moreHot"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span><br><span class="hljs-comment">//   热门评论（共有15个，此处只列举一个）</span><br>  <span class="hljs-attr">"hotComments"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>    <span class="hljs-punctuation">{</span><br>        <span class="hljs-comment">// 评论人信息</span><br>      <span class="hljs-attr">"user"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>        <span class="hljs-attr">"locationInfo"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"liveInfo"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"anonym"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"commonIdentity"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"userId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">300368802</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"avatarDetail"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"userType"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"avatarUrl"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"http://p2.music.126.net/zPTSGb7dCDnBhjsE3Ow83w==/109951164523397669.jpg"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"followed"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"mutual"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"remarkName"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"socialUserId"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"vipRights"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>          <span class="hljs-attr">"associator"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"musicPackage"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"redplus"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"redVipAnnualCount"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">-1</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"redVipLevel"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><br>        <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"nickname"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xinxinxinxin阿是"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"authStatus"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"expertTags"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"experts"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"vipType"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"target"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><br>      <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"beReplied"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"pendantData"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"showFloorComment"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"status"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"commentId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">5195106563</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"content"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"如果你刷到我，希望你嫁给爱情"</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"richContent"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"contentResource"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"time"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1609250282822</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"timeStr"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2020-12-29"</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"needDisplayTime"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"likedCount"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4576</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"expressionUrl"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"commentLocationType"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"parentCommentId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"decoration"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"repliedMark"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"grade"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"userBizLevels"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"ipLocation"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>        <span class="hljs-attr">"ip"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"location"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"userId"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><br>      <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"liked"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><br>    <span class="hljs-punctuation">}</span><br>  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"commentBanner"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"code"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">200</span><span class="hljs-punctuation">,</span><br><span class="hljs-comment">//   评论（跟limit数量一致，结构同热门评论一致）</span><br>  <span class="hljs-attr">"comments"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">{</span><br>    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"total"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">2020</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"more"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><br><span class="hljs-punctuation">}</span><br></code></pre></td></tr></tbody></table></figure>
+<h3 id="获取歌曲mv"><a href="#获取歌曲mv" class="headerlink" title="获取歌曲mv"></a>获取歌曲mv</h3><p><strong>URL</strong>：<a target="_blank" rel="noopener" href="http://music.163.com/api/mv/detail">http://music.163.com/api/mv/detail</a><br><strong>请求方式</strong>：GET<br><strong>参数</strong><br><strong>id</strong>：mvid<br><strong>type</strong>：MP4<br><strong>offset</strong>：偏移量<br><strong>limit</strong>：获取评论数<br>例如，通过ID获取歌曲mv。</p>
+<figure class="highlight awk"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">GET http:<span class="hljs-regexp">//mu</span>sic.<span class="hljs-number">163</span>.com<span class="hljs-regexp">/api/m</span>v/detail?id=<span class="hljs-number">5913083</span>&amp;type=mp4<br></code></pre></td></tr></tbody></table></figure>
+<p>返回JSON</p>
+<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs JSON"><span class="hljs-punctuation">{</span><br>  <span class="hljs-attr">"loadingPic"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"bufferPic"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"loadingPicFS"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"bufferPicFS"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"subed"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>    <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">5913083</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"房间 (新版)"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"artistId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">840134</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"artistName"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"刘瑞琦"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"briefDesc"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"刘瑞琦重新改编并演唱电影《超时空同居》插曲"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"desc"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"刘瑞琦重新改编并演唱电影《超时空同居》插曲《房间》。雷佳音、佟丽娅在电影中从相互排斥到相互依赖、渐生情愫的温暖同居故事，配着“就算我们的爱有期限，不愿说再见。”的歌词简直戳中泪点。看电影的时候就被种草了这首歌，还没去电影院的观众快去看吧！"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"cover"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"http://p1.music.126.net/1CyFsxKtpVvvZPynru3y0A==/109951163310476544.jpg"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"coverId"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">109951163310476540</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"playCount"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4763548</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"subCount"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">17738</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"shareCount"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">7692</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"likeCount"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">10512</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"commentCount"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1054</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"duration"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">156000</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"nType"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"publishTime"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2018-05-21"</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// MV链接</span><br>    <span class="hljs-attr">"brs"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>      <span class="hljs-attr">"240"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"http://vodkgeyttp8.vod.126.net/cloudmusic/mv/20180521112629/967ff2f5-cf40-40ba-b692-fdece612a146/b8546efdc123378f953ee8c8fbcffa17.mp4?wsSecret=905cacff85cd1ec8049bb4334815245a&amp;wsTime=1675502242"</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"480"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"http://vodkgeyttp8.vod.126.net/cloudmusic/mv/20180521112629/967ff2f5-cf40-40ba-b692-fdece612a146/2ce409fcbf2cc5df8bbfc5efa37f90b0.mp4?wsSecret=2a814ba6cd3c6cff2961ba196e8904ca&amp;wsTime=1675502242"</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"720"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"http://vodkgeyttp8.vod.126.net/cloudmusic/mv/20180521112629/967ff2f5-cf40-40ba-b692-fdece612a146/8f2221f15d8c8ac4166516bec7983cac.mp4?wsSecret=bf9a3c7d62d1c87bb5f1846a333a415f&amp;wsTime=1675502242"</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">"1080"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"http://vodkgeyttp8.vod.126.net/cloudmusic/mv/20180521112629/967ff2f5-cf40-40ba-b692-fdece612a146/c0c85330e4e9bc3a10845c9e60e4b7aa.mp4?wsSecret=2788c9e1d5c5bc4587f90bf3eed1a5af&amp;wsTime=1675502242"</span><br>    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"artists"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>      <span class="hljs-punctuation">{</span><br>        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">840134</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"刘瑞琦"</span><br>      <span class="hljs-punctuation">}</span><br>    <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"isReward"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span><br><br>    <span class="hljs-attr">"commentThreadId"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"R_MV_5_5913083"</span><br>  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"code"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">200</span><br><span class="hljs-punctuation">}</span><br></code></pre></td></tr></tbody></table></figure>
+
+        </section>
+        <!-- 上一篇、下一篇 -->
+        <section class="near-page">
+            
+<link rel="stylesheet" href="/css/page/near-page.css">
+
+            
+                <div class="page-prev">
+    
+        <i class="fa-solid fa-chevron-left"></i>
+    
+    <a href="http://localhost:4000/2023/02/05/api/%E9%85%B7%E7%8B%97%E9%9F%B3%E4%B9%90APi/">
+        <span class="hover-underline-animation"> 酷狗音乐APi </span></a>
+    
+</div>
+
+            
+            
+                <div class="page-next">
+    
+    <a href="http://localhost:4000/2023/01/21/ssm/springmvc/SpringMVC/">
+        <span class="hover-underline-animation"> SpringMVC </span></a>
+    
+        <i class="fa-solid fa-chevron-right"></i>
+    
+</div>
+
+            
+        </section>
+        <!-- 评论 -->
+        
+            
+                <section class="comment">
+                    
+    <!-- <div class="valine-comment"> -->
+        <div id="vcomments"></div>
+    <!-- </div> -->
+    <script type="text/javascript" src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: '1J31qkGh6RyoHg7VK404agJN-gzGzoHsz',
+            appKey: 'xXYRrJd5MBmFBpcDWjDQ3H6E',
+            avatar: 'mp',
+            placeholder: '说点什么吧',
+            pageSize: 10,
+            language: 'zh-cn',
+            
+                visitor: false,
+            
+            
+            recordIP: false
+            
+        })
+    </script>
+
+                </section>
+            
+        
+            </div>
+</article>
+
+<!-- 版权信息 -->
+
+    <script>
+        function setClipboardText(event){
+            let clipboardData = event.clipboardData || window.clipboardData;
+            if (!clipboardData) { return; }
+            event.preventDefault();
+            let text = window.getSelection().toString();
+            if (text) {
+              event.preventDefault();
+              var copyright = '\n\n'
+                              + '\n著作权归作者所有。'
+                              + '\n商业转载请联系作者获得授权，非商业转载请注明出处。'
+                              + '\n本文标题: 网易云音乐Api'
+                              + '\n作者: liuming'
+                              + '\n原文地址: http://localhost:4000/2023/02/04/api/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90Api/'
+                              + '\n发布时间: 2023-02-04'
+              clipboardData.setData('text/plain', text + copyright);
+            }
+        };
+        var contents = document.getElementsByClassName("article");
+        // 监听文章内容的copy事件
+        contents[0].addEventListener('copy',function(e){
+            setClipboardText(e);
+        });
+    </script>
+
+        </div>
+        <div id="asider">
+            
+    <section class="asider-toc">
+        
+    <div class="toc-title">
+      <i class="fa-solid fa-rectangle-list"></i>
+        <span>TOC</span>
+        </div>
+        <div class="toc-body">
+            
+                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E6%AD%8C%E6%9B%B2"><span class="toc-number">1.</span> <span class="toc-text">搜索歌曲</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%AD%8C%E6%9B%B2%E4%BF%A1%E6%81%AF"><span class="toc-number">2.</span> <span class="toc-text">获取歌曲信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%AD%8C%E6%9B%B2%E9%9F%B3%E9%A2%91"><span class="toc-number">3.</span> <span class="toc-text">获取歌曲音频</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%AD%8C%E6%9B%B2%E6%AD%8C%E8%AF%8D"><span class="toc-number">4.</span> <span class="toc-text">获取歌曲歌词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E8%AF%84%E8%AE%BA"><span class="toc-number">5.</span> <span class="toc-text">获取评论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%AD%8C%E6%9B%B2mv"><span class="toc-number">6.</span> <span class="toc-text">获取歌曲mv</span></a></li></ol>
+              
+        </div>
+    </div>
+
+    </section>
+
+        </div>
+        <div id="footer">
+            <!-- aplayer支持 -->
+
+    <section class="footer-aplayer">
+        <!-- 引入 js 文件 -->
+ 
+<script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script>
+
+<link rel="stylesheet" href="/css/plug/aplayer.css">
+
+    <script type="text/javascript">
+      const aplayer = document.querySelectorAll("#aplayer-data");
+      const ap = new APlayer({
+          container: document.getElementById('aplayer'),
+          // 文章
+          
+            fixed: true,
+          
+          
+          // 全局
+          lrcType: 1,
+          autoplay: false,
+          loop: false,
+          mutex: true,
+          order: 'list',
+          preload: 'auto',
+      });
+
+      initaplayer(aplayer);
+
+      function initaplayer(els) {
+        let elsArr = Array.from(els);
+        elsArr.forEach(el => {
+          ap.list.add(
+            [{
+              name: el.dataset.name,
+              artist: el.dataset.artist,
+              url: el.dataset.url,
+              lrc: el.dataset.lrc,
+              cover: el.dataset.cover,
+            }]
+          )
+      });
+    }
+
+
+    </script>
+ 
+    </section>
+
+
+<!-- dplayer支持 -->
+
+
+<!-- fancybox支持 -->
+
+    
+        <section class="fancybox">
+            <link rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css">
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js"> </script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('img').each(function() {
+      if ($(this).hasClass('author-avatar')){}//过滤掉头像
+      else{
+       if ($(this).parent().hasClass('fancybox')) return;
+       if ($(this).hasClass('nofancybox')) return;
+       var alt = this.alt;
+    //   if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+       $(this).wrap('<a href="' + ($(this).attr('data-src') == null ? this.src : $(this).attr('data-src')) + '" title="' + alt + '" class="fancybox"></a>');
+     }
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article');
+    });
+  });
+  $(document).ready(function() {
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']").attr('rel', 'gallery').fancybox({
+      helpers : {
+      title: { type: 'inside'}
+      }
+    });
+});
+</script>
+        </section>
+    
+
+
+<!-- 返回顶部 -->
+<section class="footer-back">
+    <div class="back" onclick="topFunction()">
+    <div id="back_top">
+      <i class="fa-solid fa-chevron-up"></i>
+      </div>
+</div>
+</section>
+
+        </div>
+    </div>
+    
+<script src="/js/back_top.js"></script>
+
+</body>
+</html>
