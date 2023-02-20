@@ -3,217 +3,305 @@
 
 <head >
     <meta charset="utf-8">
-    <!-- 总布局 -->
-    
-<link rel="stylesheet" href="/css/layout.css">
- 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
     <!-- 图标库 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
-    <!-- header -->
     
-<link rel="stylesheet" href="/css/header/author.css">
+<link rel="stylesheet" href="/css/layout.css">
 
-    
-<link rel="stylesheet" href="/css/header/nav.css">
-
-    
-<link rel="stylesheet" href="/css/header/search.css">
-
-    
-<link rel="stylesheet" href="/css/header/social.css">
-
-     
-        
-<link rel="stylesheet" href="/css/header/toc.css">
-
-     
-
-    <!-- footer -->
-    
-<link rel="stylesheet" href="/css/footer/back_top.css">
-
-    
-<link rel="stylesheet" href="/css/page/content.css">
-
-    
-<link rel="stylesheet" href="/css/page/categories.css">
-
-
-    <!-- highlight.js 代码高亮 -->
-    
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/atom-one-dark.css">
-    
-    
-    <!-- markdown -->
-    
-<link rel="stylesheet" href="/css/page/markdown.css">
-
-    <!-- 
-<link rel="stylesheet" href="/css/bootstrap.min.css">
- -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
-    <!-- 站点图标 -->
-    
-        <link rel="shortcut icon" href="/favicon.ico">
-    
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script>
+        var OriginTitle = document.title;
+        var titleTime;
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                $('[rel="icon"]').attr('href', "/joke.ico");
+                document.title = '看不见我~看不见我~';
+                clearTimeout(titleTime);
+            }
+            else {
+                $('[rel="icon"]').attr('href', "/favicon.ico");
+                document.title = ' ( ๑•̀ㅂ•́) ✧被发现了～';
+                titleTime = setTimeout(function () {
+                    document.title = OriginTitle;
+                }, 2000);
+            }
+        });
+    </script>
 <meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
+<body>
 
-<body >
-    
-        
-<link rel="stylesheet" href="/css/page/banner.css">
-
-        <div id="banner" style="background-image: url('https://i.imgtg.com/2023/01/21/Sot9s.jpg'); ">
-			<h1 class="hitokoto"></h1>
-			<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-	        
-<script src="/js/hitokoto.js"></script>
-
-        </div>
-    
-    <div id="main">
-        <div id="header">
-            <section class="header-author">
-    <div class="author">
-    
-    <img src="https://i.imgtg.com/2023/01/21/SqAtX.jpg" class="author-avatar" alt="liuming">
-    
-    
-    <h2 class="author-name">liuming</h2>
-    
-    
-    <p class="author-desc">为之则易 不为则难</p>
-    
+    <div id="loading-container" data-theme="dark">
+    <p class="loading-text">嘘~  正在从服务器偷取页面 . . . </p>
+    <div class="loading-image">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </div>
-</section>
-<section class="header-search">
-    <!-- <header class="header" itemscope itemtype="http://schema.org/WPHeader"> -->
-      <div class="search" id="search-form-wrap">
-      
-            <form class="search-form sidebar-form">
-                  <div class="input-group">
-                  <input type="text" class="search-form-input form-control" placeholder="搜索" />
-                  <!-- <span class="input-group-btn"> -->
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                  <!-- </span> -->
-                  </div>
-            </form>
-            <div class="ins-search">
+<style type="text/css" lang="css">
+    #loading-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* loader页面消失采用渐隐的方式*/
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+    }
+    .loading-image{
+        width: 120px;
+        height: 50px;
+        transform: translate(-50%);
+    }
+
+    .loading-image div:nth-child(2) {
+        -webkit-animation: pacman-balls 1s linear 0s infinite;
+        animation: pacman-balls 1s linear 0s infinite
+    }
+
+    .loading-image div:nth-child(3) {
+        -webkit-animation: pacman-balls 1s linear .33s infinite;
+        animation: pacman-balls 1s linear .33s infinite
+    }
+
+    .loading-image div:nth-child(4) {
+        -webkit-animation: pacman-balls 1s linear .66s infinite;
+        animation: pacman-balls 1s linear .66s infinite
+    }
+
+    .loading-image div:nth-child(5) {
+        -webkit-animation: pacman-balls 1s linear .99s infinite;
+        animation: pacman-balls 1s linear .99s infinite
+    }
+
+    .loading-image div:first-of-type {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
+        animation: rotate_pacman_half_up .5s 0s infinite;
+    }
+    .loading-image div:nth-child(2) {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
+        animation: rotate_pacman_half_down .5s 0s infinite;
+        margin-top: -50px;
+    }
+    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+
+    .loading-image div:nth-child(3),
+    .loading-image div:nth-child(4),
+    .loading-image div:nth-child(5),
+    .loading-image div:nth-child(6){
+        background-color: #49b1f5;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin: 2px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: translateY(-6.25px);
+        top: 25px;
+        left: 100px;
+    }
+    .loading-text{
+        margin-bottom: 20vh;
+        text-align: center;
+        color: #2c3e50;
+        font-size: 2rem;
+        box-sizing: border-box;
+        padding: 0 10px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    @media only screen and (max-width: 500px) {
+        .loading-text{
+            font-size: 1.5rem;
+        }
+    }
+    .fadeout {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    /* logo出现动画 */
+    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
+</style>
+<script>
+    (function () {
+        const loaded = function(){
+            setTimeout(function(){
+                const loader = document.getElementById("loading-container");
+                loader.className="fadeout" ;//使用渐隐的方法淡出loading page
+                // document.getElementById("body-wrap").style.display="flex";
+                setTimeout(function(){
+                    loader.style.display="none";
+                },2500);
+            },1000);//强制显示loading page 1s
+        };
+        loaded();
+    })()
+</script>
+
+    <div id="header" class="sticky top-0 shadow z-30 bg-base-100">
+        <div class="navbar">
+    <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-xl" href=".">算法表达式求值(栈)</a>
+    </div>
+    <div class="flex-none gap-2">
+        <ul class="menu menu-horizontal ">
+            
+                
+                    <li><a href="/" class="soft-size--primary soft-style--box"  rel="noopener noreferrer">主页</a></li>
+                
+            
+                
+                    <li><a href="/archives" class="soft-size--primary soft-style--box"  rel="noopener noreferrer">归档</a></li>
+                
+            
+                
+                    <li><a href="/links" class="soft-size--primary soft-style--box"  rel="noopener noreferrer">友链</a></li>
+                
+            
+                
+                    <li><a href="/about" class="soft-size--primary soft-style--box"  rel="noopener noreferrer">关于</a></li>
+                
+            
+        </ul>
+        <label class="swap swap-rotate">
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" id="theme"/>
+            <!-- sun icon -->
+            <svg id="sun" class=" swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+            <!-- moon icon -->
+            <svg id="moon" class=" swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+        </label>
+
+        
+<script src="/js/theme.js"></script>
+
+        <div class="form-control">
+            <div class="input-group">
+                <input type="text" placeholder="Search…" class="input input-bordered search-form-input" />
+                <button class="btn btn-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+            </div>
+        </div>
+        <div >
+            <!--<div class="search" id="search-form-wrap">-->
+    
+<!--        <form class="search-form sidebar-form">-->
+<!--            <div class="input-group">-->
+<!--                <input type="text" class="search-form-input form-control" placeholder="widget.search"/>-->
+<!--                &lt;!&ndash; <span class="input-group-btn"> &ndash;&gt;-->
+<!--                <i class="fa-solid fa-magnifying-glass"></i>-->
+<!--                &lt;!&ndash; </span> &ndash;&gt;-->
+<!--            </div>-->
+<!--        </form>-->
+        <div class="ins-search">
             <div class="ins-search-mask"></div>
             <div class="ins-search-container">
-                  <div class="ins-input-wrapper">
-                  <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
-                  <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                  </div>
-                  <div class="ins-section-wrapper">
-                  <div class="ins-section-container"></div>
-                  </div>
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="insight.hint"
+                           x-webkit-speech/>
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
             </div>
-            </div>                
-      
-      </div>
+        </div>
+    
+<!--</div>-->
+
+<link rel="stylesheet" href="/css/header/search.css">
+
 <!-- </header> -->
 <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 
-   <script>
-       (function (window) {
-           var INSIGHT_CONFIG = {
-               TRANSLATION: {
-                   POSTS: '文章',
-                   PAGES: '页面',
-                   CATEGORIES: '分类',
-                   TAGS: '标签',
-                   UNTITLED: '(未命名)',
-               },
-               ROOT_URL: '/',
-               CONTENT_URL: '/content.json',
-           };
-           window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-       })(window);
-       </script>
-       
+    <script>
+        (function (window) {
+            var INSIGHT_CONFIG = {
+                TRANSLATION: {
+                    POSTS: 'POSTS',
+                    PAGES: 'PAGES',
+                    CATEGORIES: 'CATEGORIES',
+                    TAGS: 'TAGS',
+                    UNTITLED: 'UNTITLED',
+                },
+                ROOT_URL: '/',
+                CONTENT_URL: '/content.json',
+            };
+            window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+        })(window);
+    </script>
+    
 <script src="/js/insight.js"></script>
 
 
-
-</section>
-
-<section class="header-nav">
-    <ul class="header-nav">
-    <li class="nav-home">
-        <i class="fa-solid fa-house"></i>
-        <a href="/">首页</a>
-    </li>
-    <li class="nav-archives">
-        <i class="fa-solid fa-box-archive"></i>
-        <a href="/archives">归档</a>
-    </li>
-    <li class="nav-links">
-        <i class="fa-solid fa-handshake-simple"></i>
-        <a href="/links">友链</a>
-    </li>
-    <li class="nav-about">
-        <i class="fa-solid fa-user"></i>
-        <a href="/about">关于</a>
-    </li>
-</ul>
-</section>
-
-<section class="header-theme">
-    
-<link rel="stylesheet" href="/css/header/theme.css">
-
-<fieldset id="switch" class="radio">
-	<input name="switch" id="theme-light" type="radio">
-	<label for="theme-light">浅色</label>
-	<input name="switch" id="theme-dark" type="radio">
-	<label for="theme-dark">深色</label>
-	<input checked="" name="switch" id="theme-auto" type="radio">
-	<label for="theme-auto">自动</label>
-</fieldset>
-
-<script src="/js/theme.js"></script>
-
-</section>
-
-
-    <section class="header-social">
-        
-    <div class="social-icons">
-    
-        
-            <a target="_blank" rel="noopener" href="https://github.com/542113461052/" >
-                <svg t="1676188327749" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2739" width="200" height="200"><path d="M1020.8 529.6c0 110.4-32 209.6-97.6 300.8-65.6 88-147.2 150.4-251.2 185.6-12.8 3.2-22.4 0-25.6-3.2-6.4-6.4-9.6-12.8-9.6-19.2v-140.8c0-43.2-12.8-75.2-35.2-94.4 25.6-3.2 46.4-6.4 68.8-12.8 19.2-6.4 40-12.8 62.4-25.6s40-28.8 52.8-43.2c12.8-16 25.6-40 35.2-68.8s12.8-62.4 12.8-100.8c0-52.8-19.2-100.8-52.8-137.6 16-40 16-84.8-6.4-134.4-12.8-3.2-32 0-52.8 6.4-22.4 9.6-43.2 19.2-59.2 28.8l-25.6 16c-40-12.8-84.8-19.2-128-19.2s-88 6.4-128 19.2c-6.4-6.4-16-9.6-28.8-19.2-12.8-6.4-32-16-56-25.6-25.6-9.6-43.2-12.8-56-9.6-19.2 49.6-22.4 94.4-3.2 134.4-35.2 38.4-52.8 84.8-52.8 137.6 0 38.4 3.2 72 12.8 100.8 9.6 28.8 22.4 52.8 35.2 68.8 16 19.2 32 32 52.8 43.2s40 22.4 62.4 25.6c22.4 3.2 43.2 9.6 68.8 12.8-19.2 16-28.8 38.4-32 68.8-9.6 3.2-19.2 6.4-32 9.6-9.6 3.2-22.4 3.2-38.4 3.2s-28.8-6.4-43.2-16c-16-9.6-25.6-22.4-38.4-40-9.6-16-19.2-25.6-32-35.2-12.8-9.6-25.6-16-32-16l-8-1.6c-9.6 0-16 0-19.2 3.2-3.2 3.2-3.2 3.2-3.2 6.4s3.2 6.4 6.4 9.6l9.6 9.6 3.2 3.2c9.6 3.2 19.2 12.8 28.8 25.6 9.6 12.8 16 25.6 22.4 35.2l6.4 16c6.4 16 16 32 28.8 40 12.8 9.6 28.8 16 43.2 19.2 16 3.2 32 3.2 46.4 3.2s28.8 0 38.4-3.2l16-3.2v94.4c0 9.6-3.2 16-9.6 19.2-6.4 3.2-16 6.4-25.6 3.2-104-35.2-185.6-94.4-251.2-185.6C35.2 736 3.2 635.2 3.2 523.2c0-94.4 22.4-179.2 68.8-257.6S177.6 123.2 256 78.4 419.2 9.6 513.6 9.6 692.8 32 771.2 78.4s140.8 107.2 185.6 185.6c40 88 64 172.8 64 265.6z" fill="#888888" p-id="2740"></path></svg>
-            </a>
-        
-    
-        
-            <a target="_blank" rel="noopener" href="https://gitee.com/LiuMingGitee/" >
-                <svg t="1676188377547" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2891" width="200" height="200"><path d="M512 1024C230.4 1024 0 793.6 0 512S230.4 0 512 0s512 230.4 512 512-230.4 512-512 512z m259.2-569.6H480c-12.8 0-25.6 12.8-25.6 25.6v64c0 12.8 12.8 25.6 25.6 25.6h176c12.8 0 25.6 12.8 25.6 25.6v12.8c0 41.6-35.2 76.8-76.8 76.8h-240c-12.8 0-25.6-12.8-25.6-25.6V416c0-41.6 35.2-76.8 76.8-76.8h355.2c12.8 0 25.6-12.8 25.6-25.6v-64c0-12.8-12.8-25.6-25.6-25.6H416c-105.6 0-188.8 86.4-188.8 188.8V768c0 12.8 12.8 25.6 25.6 25.6h374.4c92.8 0 169.6-76.8 169.6-169.6v-144c0-12.8-12.8-25.6-25.6-25.6z" fill="#888888" p-id="2892"></path></svg>
-            </a>
-        
-    
-    </div>
- 
-
-    </section>
-
-
-
         </div>
-        <div id="content" >
+        
+            <div class="avatar">
+                <div class="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                    <img src="https://i.imgtg.com/2023/01/21/SqAtX.jpg" class="author-avatar" alt="liuming">
+                </div>
+            </div>
+        
+    </div>
+</div>
+<progress class="progress  progress-primary " value="0" max="100"></progress>
+
+<script src="/js/progress.js"></script>
+
+    </div>
+    <div id="content" >
+        <div id="content-left">
+        </div>
+        <div id="content-article" >
             <!-- 文章内容 -->
 <article class="article">
-        <div class="article-info">
-                <h1 class="article-title">算法表达式求值(栈) </h1>
-                <h2 class="author-title">
-                    <strong>liuming</strong>
+        <div class="article-info text-center">
+                <h2 class="author-title text-xl" >
+                    <strong> 作者：liuming</strong>
                 </h2>
                 
+            
+            <span class="post-count"><i class="fa-regular fa-keyboard"></i>字数统计：1.5k</span>
+            <span class="post-count"><i class="fa-regular fa-clock"></i>阅读时间7</span>
+            
         </div>
     <div class="article-content">
         <!-- 预埋aplayer -->
@@ -277,6 +365,7 @@
     </figure>
   
 
+            <div class="divider">本文已结束</div>
         </section>
         <!-- 上一篇、下一篇 -->
         <section class="near-page">
@@ -340,8 +429,22 @@
                 </section>
             
         
-            </div>
+    </div>
 </article>
+<!-- highlight.js 代码高亮 -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/atom-one-dark.css">
+    
+<script src="/js/highlight.js"></script>
+
+    
+<link rel="stylesheet" href="/css/plug/highlight.css">
+
+
+
+
+
 
 <!-- 版权信息 -->
 
@@ -371,26 +474,48 @@
     </script>
 
         </div>
-        <div id="asider">
+        <div id="content-right" >
             
-    <section class="asider-toc">
+    <section class="content-right-toc">
         
     <div class="toc-title">
       <i class="fa-solid fa-rectangle-list"></i>
-        <span>TOC</span>
-        </div>
+        <span>目录</span>
         <div class="toc-body">
             
-                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">思路：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="toc-number">3.</span> <span class="toc-text">运行结果</span></a></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF%EF%BC%9A"><span class="toc-text">思路：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="toc-text">运行结果</span></a></li></ol>
               
         </div>
     </div>
 
+<style>
+    .toc-child{
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .toc-body li{
+        margin: 10px;
+    }
+</style>
     </section>
+<style>
+    .content-right-toc{
+        overflow-y: auto;
+        height: 600px;
+    }
+    .content-right-toc::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+        border-radius: 10px;
+        background-color: #f5f5f5;
+    }
+</style>
+
 
         </div>
-        <div id="footer">
-            <!-- aplayer支持 -->
+    </div>
+    <div id="footer" class="bottom-0 ">
+        <!-- aplayer支持 -->
 
     <section class="footer-aplayer">
         <!-- 引入 js 文件 -->
@@ -475,20 +600,88 @@ $(document).ready(function() {
         </section>
     
 
+<section>
+    <button id="back" onclick="topFunction()">↑</button>
+<style>
+    #back {
+        font-size: 20px;
+        background-color: white;
+        color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        cursor: pointer;
+        animation: bounce_513 1s infinite;
+        position: fixed;
+        bottom: 100px;
+        right: 16px;
+    }
+    @keyframes bounce_513 {
+        0%,
+        100% {
+            transform: translateY(-25%);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
 
-<!-- 返回顶部 -->
-<section class="footer-back">
-    <div class="back" onclick="topFunction()">
-    <div id="back_top">
-      <i class="fa-solid fa-chevron-up"></i>
-      </div>
-</div>
+        50% {
+            transform: translateY(0);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+</style>
 </section>
 
-        </div>
+            <footer class="footer footer-center p-10">
+                <div>
+                    <p class="font-bold">
+                        ACME Industries Ltd. <br/>Providing reliable tech since 1992
+                    </p>
+                    <p>Copyright © 2023 - All right reserved</p>
+                </div>
+                <div>
+                    
+                        <div class="grid grid-flow-col gap-4">
+                            
+                                
+                                    <a target="_blank" rel="noopener" href="https://github.com/542113461052/" >
+                                        <svg t="1676188327749" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2739" width="30" height="30"><path d="M1020.8 529.6c0 110.4-32 209.6-97.6 300.8-65.6 88-147.2 150.4-251.2 185.6-12.8 3.2-22.4 0-25.6-3.2-6.4-6.4-9.6-12.8-9.6-19.2v-140.8c0-43.2-12.8-75.2-35.2-94.4 25.6-3.2 46.4-6.4 68.8-12.8 19.2-6.4 40-12.8 62.4-25.6s40-28.8 52.8-43.2c12.8-16 25.6-40 35.2-68.8s12.8-62.4 12.8-100.8c0-52.8-19.2-100.8-52.8-137.6 16-40 16-84.8-6.4-134.4-12.8-3.2-32 0-52.8 6.4-22.4 9.6-43.2 19.2-59.2 28.8l-25.6 16c-40-12.8-84.8-19.2-128-19.2s-88 6.4-128 19.2c-6.4-6.4-16-9.6-28.8-19.2-12.8-6.4-32-16-56-25.6-25.6-9.6-43.2-12.8-56-9.6-19.2 49.6-22.4 94.4-3.2 134.4-35.2 38.4-52.8 84.8-52.8 137.6 0 38.4 3.2 72 12.8 100.8 9.6 28.8 22.4 52.8 35.2 68.8 16 19.2 32 32 52.8 43.2s40 22.4 62.4 25.6c22.4 3.2 43.2 9.6 68.8 12.8-19.2 16-28.8 38.4-32 68.8-9.6 3.2-19.2 6.4-32 9.6-9.6 3.2-22.4 3.2-38.4 3.2s-28.8-6.4-43.2-16c-16-9.6-25.6-22.4-38.4-40-9.6-16-19.2-25.6-32-35.2-12.8-9.6-25.6-16-32-16l-8-1.6c-9.6 0-16 0-19.2 3.2-3.2 3.2-3.2 3.2-3.2 6.4s3.2 6.4 6.4 9.6l9.6 9.6 3.2 3.2c9.6 3.2 19.2 12.8 28.8 25.6 9.6 12.8 16 25.6 22.4 35.2l6.4 16c6.4 16 16 32 28.8 40 12.8 9.6 28.8 16 43.2 19.2 16 3.2 32 3.2 46.4 3.2s28.8 0 38.4-3.2l16-3.2v94.4c0 9.6-3.2 16-9.6 19.2-6.4 3.2-16 6.4-25.6 3.2-104-35.2-185.6-94.4-251.2-185.6C35.2 736 3.2 635.2 3.2 523.2c0-94.4 22.4-179.2 68.8-257.6S177.6 123.2 256 78.4 419.2 9.6 513.6 9.6 692.8 32 771.2 78.4s140.8 107.2 185.6 185.6c40 88 64 172.8 64 265.6z" fill="#888888" p-id="2740"></path></svg>
+                                    </a>
+                                
+                            
+                                
+                                    <a target="_blank" rel="noopener" href="https://gitee.com/LiuMingGitee/" >
+                                        <svg t="1676188377547" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2891" width="30" height="30"><path d="M512 1024C230.4 1024 0 793.6 0 512S230.4 0 512 0s512 230.4 512 512-230.4 512-512 512z m259.2-569.6H480c-12.8 0-25.6 12.8-25.6 25.6v64c0 12.8 12.8 25.6 25.6 25.6h176c12.8 0 25.6 12.8 25.6 25.6v12.8c0 41.6-35.2 76.8-76.8 76.8h-240c-12.8 0-25.6-12.8-25.6-25.6V416c0-41.6 35.2-76.8 76.8-76.8h355.2c12.8 0 25.6-12.8 25.6-25.6v-64c0-12.8-12.8-25.6-25.6-25.6H416c-105.6 0-188.8 86.4-188.8 188.8V768c0 12.8 12.8 25.6 25.6 25.6h374.4c92.8 0 169.6-76.8 169.6-169.6v-144c0-12.8-12.8-25.6-25.6-25.6z" fill="#888888" p-id="2892"></path></svg>
+                                    </a>
+                                
+                            
+                        </div>
+                    
+                </div>
+            </footer>
     </div>
     
 <script src="/js/back_top.js"></script>
 
-</body>
+
+        <script src="//cdn.jsdelivr.net/npm/js-base64/base64.min.js"></script>
+        <script>
+        const hasAttr = (e,a) => a.some(_=> e.attr(_)!==undefined);
+        $('a').each(function() {
+          const $this = $(this);
+          if(hasAttr($this,["data-fancybox","ignore-external-link"])) return;
+          const href = $this.attr('href');
+          if (href && href.match('^((http|https|thunder|qqdl|ed2k|Flashget|qbrowser|ftp|rtsp|mms)://)')) {
+            const strs = href.split('/');
+            if (strs.length >= 3) {
+                const host = strs[2];
+                if (host !== 'your_domain' || window.location.host) {
+                    $this.attr('href', '/go.html?u='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
+                    if (true) {
+                        $this.attr('target', '_blank');
+                    }
+                }
+            }
+          }
+        });
+        </script></body>
 </html>
