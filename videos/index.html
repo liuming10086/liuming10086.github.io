@@ -177,7 +177,7 @@
     <div id="header" class="sticky top-0 shadow z-30 bg-base-100">
         <div class="navbar">
     <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl" href=".">liuming</a>
+        <a class="btn btn-ghost normal-case text-xl" href=".">videos</a>
     </div>
     <div class="flex-none gap-2">
         <ul class="menu menu-horizontal px-1">
@@ -251,73 +251,91 @@
         <div id="content-left">
         </div>
         <div id="content-article" >
-            <!-- 文章列表 -->
-<div class="article-list">
+            <!-- 分页(其他自定义页面) -->
 
+
+<!-- 归档 -->
+
+<!-- 分类 -->
+
+<!-- 友链 -->
+
+<!-- 视频 -->
+
+    <iframe id="videoplayer" style="border-radius: 10px" src="//player.bilibili.com/player.html?aid=684166718&bvid=BV1AU4y1U7HL&cid=722500258&page=1&high_quality=1" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+<article class="videos">
     
-        <div class="card h-80 my-8 shadow-xl bg-cover image-full" style="background-image: url(undefined);">
-            <div class="card-body">
-                <h2 class="card-title">利用Scrpay爬取快手视频</h2>
-                <div class="article-info">
-                    <!-- 日期 -->
-                    <div>
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <span>11-04</span>
-                    </div>
-                    <!-- 分类 -->
-                    
-                        <div class="text-sm ">
-                            <ul>
-                                
-                                    <li>
-                                        <a href="/categories/资源">
-                                            <i class="fa-regular fa-folder-open"></i>
-                                            资源
-                                        </a>
-                                    </li>
-                                
-                            </ul>
-                        </div>
-                    
-                    <!-- 标签 -->
-                    
-                    <div class="text-sm ">
-                        <ul>
-                            
-                                <li>
-                                    <a href="/tags/python">
-                                        <i class="fa-solid fa-tag"></i>
-                                        python
-                                    </a>
-                                </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    
-                        <div>
-                            <i class="fa-solid fa-comment"></i>
-                            <a href="/2022/11/04/python/%E5%88%A9%E7%94%A8Scrpay%E7%88%AC%E5%8F%96%E5%BF%AB%E6%89%8B%E8%A7%86%E9%A2%91/#vcomments"><span>评论</span></a>
-                        </div>
-                    
-                </div>
-                <div class="card-actions justify-end">
-                    
-                        <a class="btn btn-primary" itemprop="url" href="/2022/11/04/python/%E5%88%A9%E7%94%A8Scrpay%E7%88%AC%E5%8F%96%E5%BF%AB%E6%89%8B%E8%A7%86%E9%A2%91/">开始阅读</a>
-                    
-                </div>
+        <div class="video-item" onclick="play('//player.bilibili.com/player.html?aid=387793629&amp;bvid=BV1jd4y1X7Pz&amp;cid=825268865&amp;page=1&amp;high_quality=1')">
+            <img class="img" src="https://i.imgtg.com/2023/02/21/s1n2B.jpg">
+            <div class="video-info">
+                <p class="video-title break-words">全宇宙最可爱的单核处理器</p>
+                <span class="video-time break-words">2022-09-06</span>
+                <p class="video-description break-words">呆唯天下第一!</p>
             </div>
         </div>
     
-</div>
-  
-
-
+        <div class="video-item" onclick="play('//player.bilibili.com/player.html?aid=734537413&amp;bvid=BV1eD4y157h5&amp;cid=945399480&amp;page=1&amp;high_quality=1')">
+            <img class="img" src="https://i.imgtg.com/2023/02/21/s17Ws.jpg">
+            <div class="video-info">
+                <p class="video-title break-words">白鹿更新视频一则</p>
+                <span class="video-time break-words">2022-12-31</span>
+                <p class="video-description break-words">今天白鹿加鸡腿了吗</p>
+            </div>
+        </div>
+    
+        <div class="video-item" onclick="play('//player.bilibili.com/player.html?aid=853579948&amp;bvid=BV1dL4y1F7eH&amp;cid=588015338&amp;page=1&amp;high_quality=1')">
+            <img class="img" src="https://i.imgtg.com/2023/02/21/s1NgK.jpg">
+            <div class="video-info">
+                <p class="video-title break-words">白鹿奔跑吧兄弟快乐混剪</p>
+                <span class="video-time break-words">2022-04-29</span>
+                <p class="video-description break-words">白鹿</p>
+            </div>
+        </div>
+    
+        <div class="video-item" onclick="play('//player.bilibili.com/player.html?aid=684166718&amp;bvid=BV1AU4y1U7HL&amp;cid=722500258&amp;page=1&amp;high_quality=1')">
+            <img class="img" src="https://i.imgtg.com/2023/02/22/sN9hb.jpg">
+            <div class="video-info">
+                <p class="video-title break-words">秋千小鹿来啦</p>
+                <span class="video-time break-words">2022-05-17</span>
+                <p class="video-description break-words">秋千小鹿来啦</p>
+            </div>
+        </div>
+    
+</article>
 <style>
-  .page-container{
-    text-align: center;
-  }
+    .videos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        text-align: center;
+    }
+    .videos .video-item{
+        position: relative;
+        width: 100%;
+        border: 1px solid #42444a;
+        border-radius: 12px
+    }
+    .videos .video-item .img{
+        object-fit: cover;
+        overflow: hidden;
+        height: 160px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    .video-item .video-info{
+
+    }
+    .video-item
 </style>
+<script>
+    function play(link){
+        document.getElementById('videoplayer').src=link;
+    }
+</script>
+
+<!-- 相册 -->
+
         </div>
         <div id="content-right" >
             <section class="content-right-notice">
@@ -413,38 +431,6 @@
 
 
 <!-- fancybox支持 -->
-
-    
-        <section class="fancybox">
-            <link rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css">
-<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-<script src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js"> </script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('img').each(function() {
-      if ($(this).hasClass('author.ejs-avatar')){}//过滤掉头像
-      else{
-       if ($(this).parent().hasClass('fancybox')) return;
-       if ($(this).hasClass('nofancybox')) return;
-       var alt = this.alt;
-    //   if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-       $(this).wrap('<a href="' + ($(this).attr('data-src') == null ? this.src : $(this).attr('data-src')) + '" title="' + alt + '" class="fancybox"></a>');
-     }
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'article');
-    });
-  });
-  $(document).ready(function() {
-    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']").attr('rel', 'gallery').fancybox({
-      helpers : {
-      title: { type: 'inside'}
-      }
-    });
-});
-</script>
-        </section>
-    
 
 <section>
     

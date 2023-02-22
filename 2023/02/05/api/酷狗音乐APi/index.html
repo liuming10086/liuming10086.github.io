@@ -180,106 +180,66 @@
         <a class="btn btn-ghost normal-case text-xl" href=".">酷狗音乐APi</a>
     </div>
     <div class="flex-none gap-2">
-        <ul class="menu menu-horizontal ">
-            
-                
-                    <li><a href="/" class="soft-size--primary soft-style--box"  rel="noopener noreferrer">主页</a></li>
-                
-            
-                
-                    <li><a href="/archives" class="soft-size--primary soft-style--box"  rel="noopener noreferrer">归档</a></li>
-                
-            
-                
-                    <li><a href="/links" class="soft-size--primary soft-style--box"  rel="noopener noreferrer">友链</a></li>
-                
-            
-                
-                    <li><a href="/about" class="soft-size--primary soft-style--box"  rel="noopener noreferrer">关于</a></li>
-                
-            
-        </ul>
-        <label class="swap swap-rotate">
-            <!-- this hidden checkbox controls the state -->
-            <input type="checkbox" id="theme"/>
-            <!-- sun icon -->
-            <svg id="sun" class=" swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
-            <!-- moon icon -->
-            <svg id="moon" class=" swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
-        </label>
-
-        
-<script src="/js/theme.js"></script>
-
-        <div class="form-control">
-            <div class="input-group">
-                <input type="text" placeholder="Search…" class="input input-bordered search-form-input" />
-                <button class="btn btn-square">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                </button>
-            </div>
-        </div>
-        <div >
-            <!--<div class="search" id="search-form-wrap">-->
+        <ul class="menu menu-horizontal px-1">
     
-<!--        <form class="search-form sidebar-form">-->
-<!--            <div class="input-group">-->
-<!--                <input type="text" class="search-form-input form-control" placeholder="widget.search"/>-->
-<!--                &lt;!&ndash; <span class="input-group-btn"> &ndash;&gt;-->
-<!--                <i class="fa-solid fa-magnifying-glass"></i>-->
-<!--                &lt;!&ndash; </span> &ndash;&gt;-->
-<!--            </div>-->
-<!--        </form>-->
-        <div class="ins-search">
-            <div class="ins-search-mask"></div>
-            <div class="ins-search-container">
-                <div class="ins-input-wrapper">
-                    <input type="text" class="ins-search-input" placeholder="insight.hint"
-                           x-webkit-speech/>
-                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
-                            aria-label="Close"><span aria-hidden="true">×</span></button>
-                </div>
-                <div class="ins-section-wrapper">
-                    <div class="ins-section-container"></div>
-                </div>
-            </div>
-        </div>
-    
-<!--</div>-->
-
-<link rel="stylesheet" href="/css/header/search.css">
-
-<!-- </header> -->
-<script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-
-    <script>
-        (function (window) {
-            var INSIGHT_CONFIG = {
-                TRANSLATION: {
-                    POSTS: 'POSTS',
-                    PAGES: 'PAGES',
-                    CATEGORIES: 'CATEGORIES',
-                    TAGS: 'TAGS',
-                    UNTITLED: 'UNTITLED',
-                },
-                ROOT_URL: '/',
-                CONTENT_URL: '/content.json',
-            };
-            window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-        })(window);
-    </script>
-    
-<script src="/js/insight.js"></script>
-
-
-        </div>
         
-            <div class="avatar">
-                <div class="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                    <img src="https://i.imgtg.com/2023/01/21/SqAtX.jpg" class="author-avatar" alt="liuming">
-                </div>
-            </div>
+            
+                <li >
+                    <a href="/" class="btn btn-ghost rounded-btn soft-size--primary soft-style--box"
+                       rel="noopener noreferrer">主页</a>
+                </li>
+            
         
+    
+        
+            
+                <li >
+                    <a href="/archives" class="btn btn-ghost rounded-btn soft-size--primary soft-style--box"
+                       rel="noopener noreferrer">归档</a>
+                </li>
+            
+        
+    
+        
+            
+                <li >
+                    <a href="/links" class="btn btn-ghost rounded-btn soft-size--primary soft-style--box"
+                       rel="noopener noreferrer">友链</a>
+                </li>
+            
+        
+    
+        
+            
+                <li >
+                    <a href="/about" class="btn btn-ghost rounded-btn soft-size--primary soft-style--box"
+                       rel="noopener noreferrer">关于</a>
+                </li>
+            
+        
+    
+        
+            
+                <li class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost rounded-btn">生活</label>
+                    <ul tabindex="0" class="menu dropdown-content shadow bg-base-100 rounded-box  ">
+                        
+                            <li class="w-full"><a class="btn btn-ghost rounded-btn" href="/photos">相册</a></li>
+                        
+                            <li class="w-full"><a class="btn btn-ghost rounded-btn" href="/videos">视频</a></li>
+                        
+                    </ul>
+                </li>
+            
+        
+    
+</ul>
+
+        <div class="avatar">
+    <div class="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+        <img src="https://i.imgtg.com/2023/01/21/SqAtX.jpg" class="author-avatar" alt="liuming">
+    </div>
+</div>
     </div>
 </div>
 <progress class="progress  progress-primary " value="0" max="100"></progress>
@@ -306,9 +266,14 @@
     <div class="article-content">
         <!-- 预埋aplayer -->
         
+        
+<link rel="stylesheet" href="/css/page/markdown.css">
+
             
-        <section class="markdown-body">
-            <h3 id="搜索歌曲"><a href="#搜索歌曲" class="headerlink" title="搜索歌曲"></a>搜索歌曲</h3><p><strong>URL</strong>：<a target="_blank" rel="noopener" href="http://mobilecdn.kugou.com/api/v3/search/song">http://mobilecdn.kugou.com/api/v3/search/song</a><br><strong>请求方式</strong>：GET<br><strong>参数</strong><br><strong>keyword</strong>：关键词<br><strong>page</strong>：页码<br><strong>pagesize</strong>：每页数量<br>例如，通过歌曲名获取歌曲信息。</p>
+        <section class="markdown-body" >
+            <div id="dplayer" data-url="https://qiniu.sukoshi.xyz/video/%E7%BE%8E.mp4" data-pic="https://qiniu.sukoshi.xyz/video/%E7%BE%8E.mp4?vframe/jpg/offset/10"></div>
+
+<h3 id="搜索歌曲"><a href="#搜索歌曲" class="headerlink" title="搜索歌曲"></a>搜索歌曲</h3><p><strong>URL</strong>：<a target="_blank" rel="noopener" href="http://mobilecdn.kugou.com/api/v3/search/song">http://mobilecdn.kugou.com/api/v3/search/song</a><br><strong>请求方式</strong>：GET<br><strong>参数</strong><br><strong>keyword</strong>：关键词<br><strong>page</strong>：页码<br><strong>pagesize</strong>：每页数量<br>例如，通过歌曲名获取歌曲信息。</p>
 <figure class="highlight awk"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">GET http:<span class="hljs-regexp">//m</span>obilecdn.kugou.com<span class="hljs-regexp">/api/</span>v3<span class="hljs-regexp">/search/</span>song?keyword=房间&amp;page=<span class="hljs-number">1</span>&amp;pagesize=<span class="hljs-number">1</span><br></code></pre></td></tr></tbody></table></figure>
 <p>返回JSON</p>
 <figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br></pre></td><td class="code"><pre><code class="hljs JSON"><span class="hljs-punctuation">{</span><br>  <span class="hljs-attr">"status"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"errcode"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>    <span class="hljs-attr">"timestamp"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1675575130</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"tab"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"forcecorrection"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"correctiontype"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"total"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">462</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"istag"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"allowerr"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"info"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>      <span class="hljs-punctuation">{</span><br>        <span class="hljs-comment">// 歌曲hash值</span><br>        <span class="hljs-attr">"hash"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"32a0908e5309c41accc1cc6c44a74728"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"sqfilesize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">26168340</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"sourceid"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"pay_type_sq"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"bitrate"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">128</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"ownercount"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3396986</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"pkg_price_sq"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">// 歌名</span><br>        <span class="hljs-attr">"songname"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"房间"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">// 专辑名</span><br>        <span class="hljs-attr">"album_name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"私房歌"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"songname_original"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"房间"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"Accompany"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"sqhash"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"71955f9e4954547dda20155e1b9d0110"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"fail_process"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"pay_type"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"rp_type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"audio"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">// 专辑id</span><br>        <span class="hljs-attr">"album_id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"963741"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"othername_original"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">// mv的hash值</span><br>        <span class="hljs-attr">"mvhash"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"e314802ea4fcf8a9b35b95ecedb90f44"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"extname"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"mp3"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"group"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>          <span class="hljs-punctuation">{</span><br>            <span class="hljs-attr">"hash"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"3619e690dfbabd8e47727aac9776a55e"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"sqfilesize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">26168340</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"sourceid"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"pay_type_sq"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"bitrate"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">128</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"ownercount"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">51439</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"pkg_price_sq"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"songname"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"房间"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"album_name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"大丈夫 电视剧原声带"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"songname_original"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"房间"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"Accompany"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"sqhash"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"71955f9e4954547dda20155e1b9d0110"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"fail_process"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"pay_type"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"rp_type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"audio"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"album_id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"534416"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"othername_original"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"mvhash"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"e314802ea4fcf8a9b35b95ecedb90f44"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"extname"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"mp3"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"price_320"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">200</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"320hash"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"a2d69d03896db9f6b71a0a1ec52fc579"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"topic"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"othername"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"isnew"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"fold_type"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"old_cpy"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"srctype"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"singername"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"刘瑞琦"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"album_audio_id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">27671256</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"duration"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">265</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"320filesize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">10633087</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"pkg_price_320"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"audio_id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">952595</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"feetype"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"price"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">200</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"filename"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"刘瑞琦 - 房间"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"source"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"price_sq"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">200</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"fail_process_320"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"trans_param"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>              <span class="hljs-attr">"cpy_grade"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">5</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"classmap"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>                <span class="hljs-attr">"attr0"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">234881032</span><br>              <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"display_rate"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"qualitymap"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>                <span class="hljs-attr">"attr0"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">52</span><br>              <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"cid"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4491799</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"pay_block_tpl"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"cpy_attr0"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"hash_multitrack"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ABF824AAD27B4A8A7B924E5DBE3CE62D"</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"appid_block"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"3124"</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"musicpack_advance"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"display"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"cpy_level"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><br>            <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"pkg_price"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"pay_type_320"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"topic_url"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"m4afilesize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"rp_publish"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"privilege"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">8</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"filesize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4253358</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"isoriginal"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"320privilege"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">10</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"sqprivilege"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">10</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"fail_process_sq"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><br>          <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-punctuation">{</span><br>            <span class="hljs-attr">"hash"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"5655e6021263f7fdddeb85526a71a27f"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"sqfilesize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">28766906</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"sourceid"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"pay_type_sq"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"bitrate"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">128</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"ownercount"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">21405</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"pkg_price_sq"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"songname"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"房间"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"album_name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"房间"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"songname_original"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"房间"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"Accompany"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"sqhash"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"5e754f823c197a2edabacfab7af0ff37"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"fail_process"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"pay_type"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"rp_type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"audio"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"album_id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"16053632"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"othername_original"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"mvhash"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"e314802ea4fcf8a9b35b95ecedb90f44"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"extname"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"mp3"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"price_320"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"320hash"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"efb820a2a2e05ff194f9a37ac5a853df"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"topic"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"othername"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"isnew"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"fold_type"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"old_cpy"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"srctype"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"singername"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"刘瑞琦"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"album_audio_id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">133300336</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"duration"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">268</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"320filesize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">10735286</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"pkg_price_320"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"audio_id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">952595</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"feetype"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"price"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"filename"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"刘瑞琦 - 房间"</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"source"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"price_sq"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"fail_process_320"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"trans_param"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>              <span class="hljs-attr">"pay_block_tpl"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"classmap"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>                <span class="hljs-attr">"attr0"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">234881032</span><br>              <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"cid"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">-1</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"cpy_attr0"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"hash_multitrack"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"D852B3CA98D986AA1613D5417DC8D05F"</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"qualitymap"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>                <span class="hljs-attr">"attr0"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">52</span><br>              <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"musicpack_advance"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"display"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>              <span class="hljs-attr">"display_rate"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><br>            <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"pkg_price"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"pay_type_320"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"topic_url"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"m4afilesize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"rp_publish"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"privilege"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"filesize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4292858</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"isoriginal"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"320privilege"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"sqprivilege"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">"fail_process_sq"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><br>          <span class="hljs-punctuation">}</span><br>        <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"price_320"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">200</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"320hash"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"218883c7c5752f435fca62d0ca064a7d"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"topic"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"othername"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"isnew"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"fold_type"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"old_cpy"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"srctype"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">// 歌手名</span><br>        <span class="hljs-attr">"singername"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"刘瑞琦"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-comment">// 专辑音频id</span><br>        <span class="hljs-attr">"album_audio_id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">32073242</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"duration"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">265</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"320filesize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">10633073</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"pkg_price_320"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"audio_id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">952595</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"feetype"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"price"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">200</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"filename"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"刘瑞琦 - 房间"</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"source"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"price_sq"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">200</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"fail_process_320"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"trans_param"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>          <span class="hljs-attr">"cpy_grade"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">5</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"classmap"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>            <span class="hljs-attr">"attr0"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">234881032</span><br>          <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"display_rate"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"qualitymap"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><br>            <span class="hljs-attr">"attr0"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">52</span><br>          <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"cid"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">5793159</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"pay_block_tpl"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"cpy_attr0"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"hash_multitrack"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"74DFFFBC249AE826BE92386479E09174"</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"appid_block"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"3124"</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"musicpack_advance"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"display"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>          <span class="hljs-attr">"cpy_level"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><br>        <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"pkg_price"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"pay_type_320"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"topic_url"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"m4afilesize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"rp_publish"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"privilege"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">8</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"filesize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4253344</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"isoriginal"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"320privilege"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">10</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"sqprivilege"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">10</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">"fail_process_sq"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><br>      <span class="hljs-punctuation">}</span><br>    <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"aggregation"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"correctiontip"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">"istagresult"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><br>  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">"error"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><br><span class="hljs-punctuation">}</span><br></code></pre></td></tr></tbody></table></figure>
@@ -394,6 +359,7 @@
         
     </div>
 </article>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 <!-- highlight.js 代码高亮 -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
@@ -438,7 +404,19 @@
 
         </div>
         <div id="content-right" >
-            
+            <section class="content-right-notice">
+    <div id="notice-title" class="">
+    <i class="fas fa-bullhorn fa-shake"></i>
+    <span>公告</span>
+</div>
+<div id="notice-content" class="break-words m-5">
+
+</div>
+<script>
+    document.getElementById("notice-content").innerHTML='暂时没想到';
+</script>
+</section>
+
     <section class="content-right-toc">
         
     <div class="toc-title">
@@ -477,11 +455,107 @@
 
         </div>
     </div>
+    <div class="toolbar" >
+    <button class="btn rounded-xl m-px"><label class="swap swap-rotate">
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" id="theme"/>
+            <!-- sun icon -->
+            <svg id="sun" class=" swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+            <!-- moon icon -->
+            <svg id="moon" class=" swap-off fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+        </label></button>
+    
+<script src="/js/theme.js"></script>
+
+    <button class="btn m-px rounded-xl search-form-input"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></button>
+    <button id="back" class="btn rounded-xl m-px" onclick="topFunction()"><i class="fas fa-arrow-up" style="font-size: 20px"></i></button>
+    
+        <div >
+            <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请搜索"
+                   x-webkit-speech/>
+            <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                    aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="/css/header/search.css">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: 'UNTITLED',
+            },
+            ROOT_URL: '/',
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+        </div>
+    
+</div>
+<style>
+    .toolbar{
+        position: fixed;
+        right: 5px;
+        bottom: 40px;
+        z-index: 1001;
+        flex-direction: column;
+        display: inline-flex;
+    }
+</style>
+
     <div id="footer" class="bottom-0 ">
-        <!-- aplayer支持 -->
+        
+<footer class="footer footer-center p-10">
+    <!-- aplayer支持 -->
 
 
 <!-- dplayer支持 -->
+
+    <section class="footer-dplayer">
+        <!-- 引入js -->
+ 
+    <script src="https://cdn.bootcdn.net/ajax/libs/dplayer/1.25.1/DPlayer.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/hls.js/8.0.0-beta.3/hls.js"></script>
+    
+<link rel="stylesheet" href="/css/plug/dplayer.css">
+
+    <script type="text/javascript">
+        const dplayer = document.querySelector("#dplayer");
+        const dp = new DPlayer({
+        container: document.getElementById('dplayer'),
+            autoplay: false,
+            loop: false,
+            preload: 'auto',
+            volume: 0.7,
+            mutex: true,
+            lang: 'zh-cn',
+            video: {
+                url: dplayer.getAttribute("data-url"),
+                pic: dplayer.getAttribute("data-pic"),
+            },
+        });
+    </script>
+
+    </section>
 
 
 <!-- fancybox支持 -->
@@ -494,7 +568,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $('img').each(function() {
-      if ($(this).hasClass('author-avatar')){}//过滤掉头像
+      if ($(this).hasClass('author.ejs-avatar')){}//过滤掉头像
       else{
        if ($(this).parent().hasClass('fancybox')) return;
        if ($(this).hasClass('nofancybox')) return;
@@ -519,63 +593,35 @@ $(document).ready(function() {
     
 
 <section>
-    <button id="back" onclick="topFunction()">↑</button>
-<style>
-    #back {
-        font-size: 20px;
-        background-color: white;
-        color: black;
-        width: 40px;
-        height: 40px;
-        border-radius: 8px;
-        cursor: pointer;
-        animation: bounce_513 1s infinite;
-        position: fixed;
-        bottom: 100px;
-        right: 16px;
-    }
-    @keyframes bounce_513 {
-        0%,
-        100% {
-            transform: translateY(-25%);
-            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-        }
-
-        50% {
-            transform: translateY(0);
-            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-        }
-    }
-</style>
+    
 </section>
 
-            <footer class="footer footer-center p-10">
-                <div>
-                    <p class="font-bold">
-                        ACME Industries Ltd. <br/>Providing reliable tech since 1992
-                    </p>
-                    <p>Copyright © 2023 - All right reserved</p>
-                </div>
-                <div>
-                    
-                        <div class="grid grid-flow-col gap-4">
-                            
-                                
-                                    <a target="_blank" rel="noopener" href="https://github.com/542113461052/" >
-                                        <svg t="1676188327749" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2739" width="30" height="30"><path d="M1020.8 529.6c0 110.4-32 209.6-97.6 300.8-65.6 88-147.2 150.4-251.2 185.6-12.8 3.2-22.4 0-25.6-3.2-6.4-6.4-9.6-12.8-9.6-19.2v-140.8c0-43.2-12.8-75.2-35.2-94.4 25.6-3.2 46.4-6.4 68.8-12.8 19.2-6.4 40-12.8 62.4-25.6s40-28.8 52.8-43.2c12.8-16 25.6-40 35.2-68.8s12.8-62.4 12.8-100.8c0-52.8-19.2-100.8-52.8-137.6 16-40 16-84.8-6.4-134.4-12.8-3.2-32 0-52.8 6.4-22.4 9.6-43.2 19.2-59.2 28.8l-25.6 16c-40-12.8-84.8-19.2-128-19.2s-88 6.4-128 19.2c-6.4-6.4-16-9.6-28.8-19.2-12.8-6.4-32-16-56-25.6-25.6-9.6-43.2-12.8-56-9.6-19.2 49.6-22.4 94.4-3.2 134.4-35.2 38.4-52.8 84.8-52.8 137.6 0 38.4 3.2 72 12.8 100.8 9.6 28.8 22.4 52.8 35.2 68.8 16 19.2 32 32 52.8 43.2s40 22.4 62.4 25.6c22.4 3.2 43.2 9.6 68.8 12.8-19.2 16-28.8 38.4-32 68.8-9.6 3.2-19.2 6.4-32 9.6-9.6 3.2-22.4 3.2-38.4 3.2s-28.8-6.4-43.2-16c-16-9.6-25.6-22.4-38.4-40-9.6-16-19.2-25.6-32-35.2-12.8-9.6-25.6-16-32-16l-8-1.6c-9.6 0-16 0-19.2 3.2-3.2 3.2-3.2 3.2-3.2 6.4s3.2 6.4 6.4 9.6l9.6 9.6 3.2 3.2c9.6 3.2 19.2 12.8 28.8 25.6 9.6 12.8 16 25.6 22.4 35.2l6.4 16c6.4 16 16 32 28.8 40 12.8 9.6 28.8 16 43.2 19.2 16 3.2 32 3.2 46.4 3.2s28.8 0 38.4-3.2l16-3.2v94.4c0 9.6-3.2 16-9.6 19.2-6.4 3.2-16 6.4-25.6 3.2-104-35.2-185.6-94.4-251.2-185.6C35.2 736 3.2 635.2 3.2 523.2c0-94.4 22.4-179.2 68.8-257.6S177.6 123.2 256 78.4 419.2 9.6 513.6 9.6 692.8 32 771.2 78.4s140.8 107.2 185.6 185.6c40 88 64 172.8 64 265.6z" fill="#888888" p-id="2740"></path></svg>
-                                    </a>
-                                
-                            
-                                
-                                    <a target="_blank" rel="noopener" href="https://gitee.com/LiuMingGitee/" >
-                                        <svg t="1676188377547" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2891" width="30" height="30"><path d="M512 1024C230.4 1024 0 793.6 0 512S230.4 0 512 0s512 230.4 512 512-230.4 512-512 512z m259.2-569.6H480c-12.8 0-25.6 12.8-25.6 25.6v64c0 12.8 12.8 25.6 25.6 25.6h176c12.8 0 25.6 12.8 25.6 25.6v12.8c0 41.6-35.2 76.8-76.8 76.8h-240c-12.8 0-25.6-12.8-25.6-25.6V416c0-41.6 35.2-76.8 76.8-76.8h355.2c12.8 0 25.6-12.8 25.6-25.6v-64c0-12.8-12.8-25.6-25.6-25.6H416c-105.6 0-188.8 86.4-188.8 188.8V768c0 12.8 12.8 25.6 25.6 25.6h374.4c92.8 0 169.6-76.8 169.6-169.6v-144c0-12.8-12.8-25.6-25.6-25.6z" fill="#888888" p-id="2892"></path></svg>
-                                    </a>
-                                
-                            
-                        </div>
-                    
-                </div>
-            </footer>
+    <div>
+        <p class="font-bold">
+            ACME Industries Ltd. <br/>Providing reliable tech since 1992
+        </p>
+        <p>Copyright © 2023 - All right reserved</p>
+    </div>
+    <div>
+        
+            <div class="grid grid-flow-col gap-4">
+    
+        
+            <a target="_blank" rel="noopener" href="https://github.com/542113461052/" >
+                <svg t="1676188327749" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2739" width="30" height="30"><path d="M1020.8 529.6c0 110.4-32 209.6-97.6 300.8-65.6 88-147.2 150.4-251.2 185.6-12.8 3.2-22.4 0-25.6-3.2-6.4-6.4-9.6-12.8-9.6-19.2v-140.8c0-43.2-12.8-75.2-35.2-94.4 25.6-3.2 46.4-6.4 68.8-12.8 19.2-6.4 40-12.8 62.4-25.6s40-28.8 52.8-43.2c12.8-16 25.6-40 35.2-68.8s12.8-62.4 12.8-100.8c0-52.8-19.2-100.8-52.8-137.6 16-40 16-84.8-6.4-134.4-12.8-3.2-32 0-52.8 6.4-22.4 9.6-43.2 19.2-59.2 28.8l-25.6 16c-40-12.8-84.8-19.2-128-19.2s-88 6.4-128 19.2c-6.4-6.4-16-9.6-28.8-19.2-12.8-6.4-32-16-56-25.6-25.6-9.6-43.2-12.8-56-9.6-19.2 49.6-22.4 94.4-3.2 134.4-35.2 38.4-52.8 84.8-52.8 137.6 0 38.4 3.2 72 12.8 100.8 9.6 28.8 22.4 52.8 35.2 68.8 16 19.2 32 32 52.8 43.2s40 22.4 62.4 25.6c22.4 3.2 43.2 9.6 68.8 12.8-19.2 16-28.8 38.4-32 68.8-9.6 3.2-19.2 6.4-32 9.6-9.6 3.2-22.4 3.2-38.4 3.2s-28.8-6.4-43.2-16c-16-9.6-25.6-22.4-38.4-40-9.6-16-19.2-25.6-32-35.2-12.8-9.6-25.6-16-32-16l-8-1.6c-9.6 0-16 0-19.2 3.2-3.2 3.2-3.2 3.2-3.2 6.4s3.2 6.4 6.4 9.6l9.6 9.6 3.2 3.2c9.6 3.2 19.2 12.8 28.8 25.6 9.6 12.8 16 25.6 22.4 35.2l6.4 16c6.4 16 16 32 28.8 40 12.8 9.6 28.8 16 43.2 19.2 16 3.2 32 3.2 46.4 3.2s28.8 0 38.4-3.2l16-3.2v94.4c0 9.6-3.2 16-9.6 19.2-6.4 3.2-16 6.4-25.6 3.2-104-35.2-185.6-94.4-251.2-185.6C35.2 736 3.2 635.2 3.2 523.2c0-94.4 22.4-179.2 68.8-257.6S177.6 123.2 256 78.4 419.2 9.6 513.6 9.6 692.8 32 771.2 78.4s140.8 107.2 185.6 185.6c40 88 64 172.8 64 265.6z" fill="#888888" p-id="2740"></path></svg>
+            </a>
+        
+    
+        
+            <a target="_blank" rel="noopener" href="https://gitee.com/LiuMingGitee/" >
+                <svg t="1676188377547" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2891" width="30" height="30"><path d="M512 1024C230.4 1024 0 793.6 0 512S230.4 0 512 0s512 230.4 512 512-230.4 512-512 512z m259.2-569.6H480c-12.8 0-25.6 12.8-25.6 25.6v64c0 12.8 12.8 25.6 25.6 25.6h176c12.8 0 25.6 12.8 25.6 25.6v12.8c0 41.6-35.2 76.8-76.8 76.8h-240c-12.8 0-25.6-12.8-25.6-25.6V416c0-41.6 35.2-76.8 76.8-76.8h355.2c12.8 0 25.6-12.8 25.6-25.6v-64c0-12.8-12.8-25.6-25.6-25.6H416c-105.6 0-188.8 86.4-188.8 188.8V768c0 12.8 12.8 25.6 25.6 25.6h374.4c92.8 0 169.6-76.8 169.6-169.6v-144c0-12.8-12.8-25.6-25.6-25.6z" fill="#888888" p-id="2892"></path></svg>
+            </a>
+        
+    
+</div>
+        
+    </div>
+</footer>
     </div>
     
 <script src="/js/back_top.js"></script>

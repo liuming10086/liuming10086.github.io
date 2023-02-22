@@ -17,7 +17,6 @@ $(function () {
         var lang_name = code_language.replace("hljs", "").trim();
 // 首字母大写
         lang_name = lang_name.slice(0, 1).toUpperCase() + lang_name.slice(1);
-        console.log(lang_name)
         $(this).parent().siblings(".code_lang").text(lang_name);
 
     });

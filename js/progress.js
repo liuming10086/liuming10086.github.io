@@ -7,7 +7,6 @@
         var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
         // 滚动条总高度
         var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-        console.log(scrollTop, scrollHeight, clientHeight);
         progressBar.value =
             +(scrollTop / (scrollHeight - clientHeight))*100;
     });
