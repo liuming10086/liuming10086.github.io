@@ -1,965 +1,345 @@
-<!DOCTYPE html>
-<html >
-
-<head >
-    <meta charset="utf-8">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
-    <!-- 图标库 -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
-    
-<link rel="stylesheet" href="/css/layout.css">
-
-    <script>
-        var OriginTitle = document.title;
-        var titleTime;
-        document.addEventListener('visibilitychange', function () {
-            if (document.hidden) {
-                $('[rel="icon"]').attr('href', "/joke.ico");
-                document.title = '看不见我~看不见我~';
-                clearTimeout(titleTime);
-            }
-            else {
-                $('[rel="icon"]').attr('href', "/favicon.ico");
-                document.title = ' ( ๑•̀ㅂ•́) ✧被发现了～';
-                titleTime = setTimeout(function () {
-                    document.title = OriginTitle;
-                }, 2000);
-            }
-        });
-    </script>
-<meta name="generator" content="Hexo 6.3.0">
-<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-</head>
-<body>
-
-    <div id="loading-container" data-theme="dark">
-    <p class="loading-text">嘘~  正在从服务器偷取页面 . . . </p>
-    <div class="loading-image">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
-<style type="text/css" lang="css">
-    #loading-container{
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-height: 100vh;
-        width: 100vw;
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        /* loader页面消失采用渐隐的方式*/
-        -webkit-transition: opacity 1s ease;
-        -moz-transition: opacity 1s ease;
-        -o-transition: opacity 1s ease;
-        transition: opacity 1s ease;
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>liuming的个人博客 - liuming</title><meta name="author" content="liuming"><meta name="copyright" content="liuming"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="liuming">
+<meta property="og:type" content="website">
+<meta property="og:title" content="liuming的个人博客">
+<meta property="og:url" content="http://localhost:4000/index.html">
+<meta property="og:site_name" content="liuming的个人博客">
+<meta property="og:description" content="liuming">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.imgtg.com/2023/01/21/SqAtX.jpg">
+<meta property="article:author" content="liuming">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgtg.com/2023/01/21/SqAtX.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://localhost:4000/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"5BIEAXCCDO","apiKey":"1f77c775ecf09295b06e574c1c3a5d73","indexName":"hexo","hits":{"per_page":8},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":200,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: liuming","link":"链接: ","source":"来源: liuming的个人博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
     }
-    .loading-image{
-        width: 120px;
-        height: 50px;
-        transform: translate(-50%);
-    }
-
-    .loading-image div:nth-child(2) {
-        -webkit-animation: pacman-balls 1s linear 0s infinite;
-        animation: pacman-balls 1s linear 0s infinite
-    }
-
-    .loading-image div:nth-child(3) {
-        -webkit-animation: pacman-balls 1s linear .33s infinite;
-        animation: pacman-balls 1s linear .33s infinite
-    }
-
-    .loading-image div:nth-child(4) {
-        -webkit-animation: pacman-balls 1s linear .66s infinite;
-        animation: pacman-balls 1s linear .66s infinite
-    }
-
-    .loading-image div:nth-child(5) {
-        -webkit-animation: pacman-balls 1s linear .99s infinite;
-        animation: pacman-balls 1s linear .99s infinite
-    }
-
-    .loading-image div:first-of-type {
-        width: 0;
-        height: 0;
-        border: 25px solid #49b1f5;
-        border-right-color: transparent;
-        border-radius: 25px;
-        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
-        animation: rotate_pacman_half_up .5s 0s infinite;
-    }
-    .loading-image div:nth-child(2) {
-        width: 0;
-        height: 0;
-        border: 25px solid #49b1f5;
-        border-right-color: transparent;
-        border-radius: 25px;
-        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
-        animation: rotate_pacman_half_down .5s 0s infinite;
-        margin-top: -50px;
-    }
-    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
-
-    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
-
-    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
-
-    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
-
-    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
-
-    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
-
-
-    .loading-image div:nth-child(3),
-    .loading-image div:nth-child(4),
-    .loading-image div:nth-child(5),
-    .loading-image div:nth-child(6){
-        background-color: #49b1f5;
-        width: 15px;
-        height: 15px;
-        border-radius: 100%;
-        margin: 2px;
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        transform: translateY(-6.25px);
-        top: 25px;
-        left: 100px;
-    }
-    .loading-text{
-        margin-bottom: 20vh;
-        text-align: center;
-        color: #2c3e50;
-        font-size: 2rem;
-        box-sizing: border-box;
-        padding: 0 10px;
-        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-    @media only screen and (max-width: 500px) {
-        .loading-text{
-            font-size: 1.5rem;
-        }
-    }
-    .fadeout {
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    /* logo出现动画 */
-    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
-    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
-</style>
-<script>
-    (function () {
-        const loaded = function(){
-            setTimeout(function(){
-                const loader = document.getElementById("loading-container");
-                loader.className="fadeout" ;//使用渐隐的方法淡出loading page
-                // document.getElementById("body-wrap").style.display="flex";
-                setTimeout(function(){
-                    loader.style.display="none";
-                },2500);
-            },1000);//强制显示loading page 1s
-        };
-        loaded();
-    })()
-</script>
-
-    <div id="header" class="sticky top-0 shadow z-30 bg-base-100">
-        <div class="navbar">
-    <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl" href=".">liuming</a>
-    </div>
-    <div class="flex-none gap-2">
-        <ul class="menu menu-horizontal px-1">
-    
-        
-            
-                <li >
-                    <a href="/" class="btn btn-ghost rounded-btn soft-size--primary soft-style--box"
-                       rel="noopener noreferrer">主页</a>
-                </li>
-            
-        
-    
-        
-            
-                <li >
-                    <a href="/archives" class="btn btn-ghost rounded-btn soft-size--primary soft-style--box"
-                       rel="noopener noreferrer">归档</a>
-                </li>
-            
-        
-    
-        
-            
-                <li >
-                    <a href="/links" class="btn btn-ghost rounded-btn soft-size--primary soft-style--box"
-                       rel="noopener noreferrer">友链</a>
-                </li>
-            
-        
-    
-        
-            
-                <li >
-                    <a href="/about" class="btn btn-ghost rounded-btn soft-size--primary soft-style--box"
-                       rel="noopener noreferrer">关于</a>
-                </li>
-            
-        
-    
-        
-            
-                <li class="dropdown dropdown-end">
-                    <label tabindex="0" class="btn btn-ghost rounded-btn">生活</label>
-                    <ul tabindex="0" class="menu dropdown-content shadow bg-base-100 rounded-box  ">
-                        
-                            <li class="w-full"><a class="btn btn-ghost rounded-btn" href="/photos">相册</a></li>
-                        
-                            <li class="w-full"><a class="btn btn-ghost rounded-btn" href="/videos">视频</a></li>
-                        
-                    </ul>
-                </li>
-            
-        
-    
-</ul>
-
-        <div class="avatar">
-    <div class="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-        <img src="https://i.imgtg.com/2023/01/21/SqAtX.jpg" class="author-avatar" alt="liuming">
-    </div>
-</div>
-    </div>
-</div>
-<progress class="progress  progress-primary " value="0" max="100"></progress>
-
-<script src="/js/progress.js"></script>
-
-    </div>
-    <div id="content" >
-        <div id="content-left">
-        </div>
-        <div id="content-article" >
-            <!-- 文章列表 -->
-<div class="article-list">
-
-    
-        <div class="card h-80 my-8 shadow-xl bg-cover image-full" style="background-image: url(undefined);">
-            <div class="card-body">
-                <h2 class="card-title">酷狗音乐APi</h2>
-                <div class="article-info">
-                    <!-- 日期 -->
-                    <div>
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <span>02-05</span>
-                    </div>
-                    <!-- 分类 -->
-                    
-                        <div class="text-sm ">
-                            <ul>
-                                
-                                    <li>
-                                        <a href="/categories/api">
-                                            <i class="fa-regular fa-folder-open"></i>
-                                            api
-                                        </a>
-                                    </li>
-                                
-                            </ul>
-                        </div>
-                    
-                    <!-- 标签 -->
-                    
-                    
-                        <div>
-                            <i class="fa-solid fa-comment"></i>
-                            <a href="/2023/02/05/api/%E9%85%B7%E7%8B%97%E9%9F%B3%E4%B9%90APi/#vcomments"><span>评论</span></a>
-                        </div>
-                    
-                </div>
-                <div class="card-actions justify-end">
-                    
-                        <a class="btn btn-primary" itemprop="url" href="/2023/02/05/api/%E9%85%B7%E7%8B%97%E9%9F%B3%E4%B9%90APi/">开始阅读</a>
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="card h-80 my-8 shadow-xl bg-cover image-full" style="background-image: url(undefined);">
-            <div class="card-body">
-                <h2 class="card-title">网易云音乐Api</h2>
-                <div class="article-info">
-                    <!-- 日期 -->
-                    <div>
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <span>02-04</span>
-                    </div>
-                    <!-- 分类 -->
-                    
-                        <div class="text-sm ">
-                            <ul>
-                                
-                                    <li>
-                                        <a href="/categories/api">
-                                            <i class="fa-regular fa-folder-open"></i>
-                                            api
-                                        </a>
-                                    </li>
-                                
-                            </ul>
-                        </div>
-                    
-                    <!-- 标签 -->
-                    
-                    
-                        <div>
-                            <i class="fa-solid fa-comment"></i>
-                            <a href="/2023/02/04/api/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90Api/#vcomments"><span>评论</span></a>
-                        </div>
-                    
-                </div>
-                <div class="card-actions justify-end">
-                    
-                        <a class="btn btn-primary" itemprop="url" href="/2023/02/04/api/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90Api/">开始阅读</a>
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="card h-80 my-8 shadow-xl bg-cover image-full" style="background-image: url(undefined);">
-            <div class="card-body">
-                <h2 class="card-title">SpringMVC</h2>
-                <div class="article-info">
-                    <!-- 日期 -->
-                    <div>
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <span>01-21</span>
-                    </div>
-                    <!-- 分类 -->
-                    
-                        <div class="text-sm ">
-                            <ul>
-                                
-                                    <li>
-                                        <a href="/categories/springmvc">
-                                            <i class="fa-regular fa-folder-open"></i>
-                                            springmvc
-                                        </a>
-                                    </li>
-                                
-                            </ul>
-                        </div>
-                    
-                    <!-- 标签 -->
-                    
-                    <div class="text-sm ">
-                        <ul>
-                            
-                                <li>
-                                    <a href="/tags/java">
-                                        <i class="fa-solid fa-tag"></i>
-                                        java
-                                    </a>
-                                </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    
-                        <div>
-                            <i class="fa-solid fa-comment"></i>
-                            <a href="/2023/01/21/ssm/springmvc/SpringMVC/#vcomments"><span>评论</span></a>
-                        </div>
-                    
-                </div>
-                <div class="card-actions justify-end">
-                    
-                        <a class="btn btn-primary" itemprop="url" href="/2023/01/21/ssm/springmvc/SpringMVC/">开始阅读</a>
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="card h-80 my-8 shadow-xl bg-cover image-full" style="background-image: url(undefined);">
-            <div class="card-body">
-                <h2 class="card-title">Spring Aop</h2>
-                <div class="article-info">
-                    <!-- 日期 -->
-                    <div>
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <span>01-19</span>
-                    </div>
-                    <!-- 分类 -->
-                    
-                        <div class="text-sm ">
-                            <ul>
-                                
-                                    <li>
-                                        <a href="/categories/spring">
-                                            <i class="fa-regular fa-folder-open"></i>
-                                            spring
-                                        </a>
-                                    </li>
-                                
-                            </ul>
-                        </div>
-                    
-                    <!-- 标签 -->
-                    
-                    <div class="text-sm ">
-                        <ul>
-                            
-                                <li>
-                                    <a href="/tags/java">
-                                        <i class="fa-solid fa-tag"></i>
-                                        java
-                                    </a>
-                                </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    
-                        <div>
-                            <i class="fa-solid fa-comment"></i>
-                            <a href="/2023/01/19/ssm/spring/Spring%20Aop/#vcomments"><span>评论</span></a>
-                        </div>
-                    
-                </div>
-                <div class="card-actions justify-end">
-                    
-                        <a class="btn btn-primary" itemprop="url" href="/2023/01/19/ssm/spring/Spring%20Aop/">开始阅读</a>
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="card h-80 my-8 shadow-xl bg-cover image-full" style="background-image: url(undefined);">
-            <div class="card-body">
-                <h2 class="card-title">Spring整合Mybatis</h2>
-                <div class="article-info">
-                    <!-- 日期 -->
-                    <div>
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <span>01-19</span>
-                    </div>
-                    <!-- 分类 -->
-                    
-                        <div class="text-sm ">
-                            <ul>
-                                
-                                    <li>
-                                        <a href="/categories/spring">
-                                            <i class="fa-regular fa-folder-open"></i>
-                                            spring
-                                        </a>
-                                    </li>
-                                
-                            </ul>
-                        </div>
-                    
-                    <!-- 标签 -->
-                    
-                    <div class="text-sm ">
-                        <ul>
-                            
-                                <li>
-                                    <a href="/tags/java">
-                                        <i class="fa-solid fa-tag"></i>
-                                        java
-                                    </a>
-                                </li>
-                            
-                                <li>
-                                    <a href="/tags/xml">
-                                        <i class="fa-solid fa-tag"></i>
-                                        xml
-                                    </a>
-                                </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    
-                        <div>
-                            <i class="fa-solid fa-comment"></i>
-                            <a href="/2023/01/19/ssm/spring/Spring%E6%95%B4%E5%90%88Mybatis/#vcomments"><span>评论</span></a>
-                        </div>
-                    
-                </div>
-                <div class="card-actions justify-end">
-                    
-                        <a class="btn btn-primary" itemprop="url" href="/2023/01/19/ssm/spring/Spring%E6%95%B4%E5%90%88Mybatis/">开始阅读</a>
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="card h-80 my-8 shadow-xl bg-cover image-full" style="background-image: url(undefined);">
-            <div class="card-body">
-                <h2 class="card-title">Spring后置处理器</h2>
-                <div class="article-info">
-                    <!-- 日期 -->
-                    <div>
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <span>01-19</span>
-                    </div>
-                    <!-- 分类 -->
-                    
-                        <div class="text-sm ">
-                            <ul>
-                                
-                                    <li>
-                                        <a href="/categories/spring">
-                                            <i class="fa-regular fa-folder-open"></i>
-                                            spring
-                                        </a>
-                                    </li>
-                                
-                            </ul>
-                        </div>
-                    
-                    <!-- 标签 -->
-                    
-                    <div class="text-sm ">
-                        <ul>
-                            
-                                <li>
-                                    <a href="/tags/java">
-                                        <i class="fa-solid fa-tag"></i>
-                                        java
-                                    </a>
-                                </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    
-                        <div>
-                            <i class="fa-solid fa-comment"></i>
-                            <a href="/2023/01/19/ssm/spring/Spring%E5%90%8E%E7%BD%AE%E5%A4%84%E7%90%86%E5%99%A8/#vcomments"><span>评论</span></a>
-                        </div>
-                    
-                </div>
-                <div class="card-actions justify-end">
-                    
-                        <a class="btn btn-primary" itemprop="url" href="/2023/01/19/ssm/spring/Spring%E5%90%8E%E7%BD%AE%E5%A4%84%E7%90%86%E5%99%A8/">开始阅读</a>
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="card h-80 my-8 shadow-xl bg-cover image-full" style="background-image: url(undefined);">
-            <div class="card-body">
-                <h2 class="card-title">Spring Bean的生命周期</h2>
-                <div class="article-info">
-                    <!-- 日期 -->
-                    <div>
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <span>01-19</span>
-                    </div>
-                    <!-- 分类 -->
-                    
-                        <div class="text-sm ">
-                            <ul>
-                                
-                                    <li>
-                                        <a href="/categories/spring">
-                                            <i class="fa-regular fa-folder-open"></i>
-                                            spring
-                                        </a>
-                                    </li>
-                                
-                            </ul>
-                        </div>
-                    
-                    <!-- 标签 -->
-                    
-                    <div class="text-sm ">
-                        <ul>
-                            
-                                <li>
-                                    <a href="/tags/java">
-                                        <i class="fa-solid fa-tag"></i>
-                                        java
-                                    </a>
-                                </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    
-                        <div>
-                            <i class="fa-solid fa-comment"></i>
-                            <a href="/2023/01/19/ssm/spring/Spring%20Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/#vcomments"><span>评论</span></a>
-                        </div>
-                    
-                </div>
-                <div class="card-actions justify-end">
-                    
-                        <a class="btn btn-primary" itemprop="url" href="/2023/01/19/ssm/spring/Spring%20Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">开始阅读</a>
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="card h-80 my-8 shadow-xl bg-cover image-full" style="background-image: url(undefined);">
-            <div class="card-body">
-                <h2 class="card-title">Spring注解开发</h2>
-                <div class="article-info">
-                    <!-- 日期 -->
-                    <div>
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <span>01-15</span>
-                    </div>
-                    <!-- 分类 -->
-                    
-                        <div class="text-sm ">
-                            <ul>
-                                
-                                    <li>
-                                        <a href="/categories/spring">
-                                            <i class="fa-regular fa-folder-open"></i>
-                                            spring
-                                        </a>
-                                    </li>
-                                
-                            </ul>
-                        </div>
-                    
-                    <!-- 标签 -->
-                    
-                    <div class="text-sm ">
-                        <ul>
-                            
-                                <li>
-                                    <a href="/tags/java">
-                                        <i class="fa-solid fa-tag"></i>
-                                        java
-                                    </a>
-                                </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    
-                        <div>
-                            <i class="fa-solid fa-comment"></i>
-                            <a href="/2023/01/15/ssm/spring/Spring%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91/#vcomments"><span>评论</span></a>
-                        </div>
-                    
-                </div>
-                <div class="card-actions justify-end">
-                    
-                        <a class="btn btn-primary" itemprop="url" href="/2023/01/15/ssm/spring/Spring%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91/">开始阅读</a>
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="card h-80 my-8 shadow-xl bg-cover image-full" style="background-image: url(undefined);">
-            <div class="card-body">
-                <h2 class="card-title">Spring配置数据源</h2>
-                <div class="article-info">
-                    <!-- 日期 -->
-                    <div>
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <span>01-15</span>
-                    </div>
-                    <!-- 分类 -->
-                    
-                        <div class="text-sm ">
-                            <ul>
-                                
-                                    <li>
-                                        <a href="/categories/spring">
-                                            <i class="fa-regular fa-folder-open"></i>
-                                            spring
-                                        </a>
-                                    </li>
-                                
-                            </ul>
-                        </div>
-                    
-                    <!-- 标签 -->
-                    
-                    <div class="text-sm ">
-                        <ul>
-                            
-                                <li>
-                                    <a href="/tags/java">
-                                        <i class="fa-solid fa-tag"></i>
-                                        java
-                                    </a>
-                                </li>
-                            
-                                <li>
-                                    <a href="/tags/xml">
-                                        <i class="fa-solid fa-tag"></i>
-                                        xml
-                                    </a>
-                                </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    
-                        <div>
-                            <i class="fa-solid fa-comment"></i>
-                            <a href="/2023/01/15/ssm/spring/Spring%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E6%BA%90/#vcomments"><span>评论</span></a>
-                        </div>
-                    
-                </div>
-                <div class="card-actions justify-end">
-                    
-                        <a class="btn btn-primary" itemprop="url" href="/2023/01/15/ssm/spring/Spring%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E6%BA%90/">开始阅读</a>
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="card h-80 my-8 shadow-xl bg-cover image-full" style="background-image: url(undefined);">
-            <div class="card-body">
-                <h2 class="card-title">Spring配置文件</h2>
-                <div class="article-info">
-                    <!-- 日期 -->
-                    <div>
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <span>01-15</span>
-                    </div>
-                    <!-- 分类 -->
-                    
-                        <div class="text-sm ">
-                            <ul>
-                                
-                                    <li>
-                                        <a href="/categories/spring">
-                                            <i class="fa-regular fa-folder-open"></i>
-                                            spring
-                                        </a>
-                                    </li>
-                                
-                            </ul>
-                        </div>
-                    
-                    <!-- 标签 -->
-                    
-                    <div class="text-sm ">
-                        <ul>
-                            
-                                <li>
-                                    <a href="/tags/java">
-                                        <i class="fa-solid fa-tag"></i>
-                                        java
-                                    </a>
-                                </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    
-                        <div>
-                            <i class="fa-solid fa-comment"></i>
-                            <a href="/2023/01/15/ssm/spring/Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/#vcomments"><span>评论</span></a>
-                        </div>
-                    
-                </div>
-                <div class="card-actions justify-end">
-                    
-                        <a class="btn btn-primary" itemprop="url" href="/2023/01/15/ssm/spring/Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">开始阅读</a>
-                    
-                </div>
-            </div>
-        </div>
-    
-</div>
-  
-
-
-    <nav class="page-container">
-      
-      <span class="btn btn  btn-active">1</span><a class="btn" href="/page/2/">2</a><a class="btn" rel="next" href="/page/2/">></a>
-    </nav>
-  
-<style>
-  .page-container{
-    text-align: center;
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
   }
-</style>
-        </div>
-        <div id="content-right" >
-            <section class="content-right-notice">
-    <div id="notice-title" class="">
-    <i class="fas fa-bullhorn fa-shake"></i>
-    <span>公告</span>
-</div>
-<div id="notice-content" class="break-words m-5">
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'liuming的个人博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-03-08 15:11:15'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-</div>
-<script>
-    document.getElementById("notice-content").innerHTML='暂时没想到';
-</script>
-</section>
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
 
-        </div>
-    </div>
-    <div class="toolbar" >
-    <button class="btn rounded-xl m-px"><label class="swap swap-rotate">
-            <!-- this hidden checkbox controls the state -->
-            <input type="checkbox" id="theme"/>
-            <!-- sun icon -->
-            <svg id="sun" class=" swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
-            <!-- moon icon -->
-            <svg id="moon" class=" swap-off fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
-        </label></button>
-    
-<script src="/js/theme.js"></script>
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
 
-    <button class="btn m-px rounded-xl search-form-input"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></button>
-    <button id="back" class="btn rounded-xl m-px" onclick="topFunction()"><i class="fas fa-arrow-up" style="font-size: 20px"></i></button>
-    
-        <div >
-            <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="请搜索"
-                   x-webkit-speech/>
-            <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
-                    aria-label="Close"><span aria-hidden="true">×</span></button>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-
-<link rel="stylesheet" href="/css/header/search.css">
-
-<script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-<script>
-    (function (window) {
-        var INSIGHT_CONFIG = {
-            TRANSLATION: {
-                POSTS: '文章',
-                PAGES: '页面',
-                CATEGORIES: '分类',
-                TAGS: '标签',
-                UNTITLED: 'UNTITLED',
-            },
-            ROOT_URL: '/',
-            CONTENT_URL: '/content.json',
-        };
-        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-    })(window);
-</script>
-
-<script src="/js/insight.js"></script>
-
-        </div>
-    
-</div>
-<style>
-    .toolbar{
-        position: fixed;
-        right: 5px;
-        bottom: 40px;
-        z-index: 1001;
-        flex-direction: column;
-        display: inline-flex;
-    }
-</style>
-
-    <div id="footer" class="bottom-0 ">
-        
-<footer class="footer footer-center p-10">
-    <!-- aplayer支持 -->
-
-
-<!-- dplayer支持 -->
-
-
-<!-- fancybox支持 -->
-
-    
-        <section class="fancybox">
-            <link rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css">
-<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-<script src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js"> </script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('img').each(function() {
-      if ($(this).hasClass('author.ejs-avatar')){}//过滤掉头像
-      else{
-       if ($(this).parent().hasClass('fancybox')) return;
-       if ($(this).hasClass('nofancybox')) return;
-       var alt = this.alt;
-    //   if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-       $(this).wrap('<a href="' + ($(this).attr('data-src') == null ? this.src : $(this).attr('data-src')) + '" title="' + alt + '" class="fancybox"></a>');
-     }
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'article');
-    });
-  });
-  $(document).ready(function() {
-    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']").attr('rel', 'gallery').fancybox({
-      helpers : {
-      title: { type: 'inside'}
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
       }
-    });
-});
-</script>
-        </section>
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/atom-one-dark.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"><meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
 
-<section>
-    
-</section>
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
 
-    <div>
-        <p class="font-bold">
-            ACME Industries Ltd. <br/>Providing reliable tech since 1992
-        </p>
-        <p>Copyright © 2023 - All right reserved</p>
-    </div>
-    <div>
-        
-            <div class="grid grid-flow-col gap-4">
-    
-        
-            <a target="_blank" rel="noopener" href="https://github.com/542113461052/" >
-                <svg t="1676188327749" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2739" width="30" height="30"><path d="M1020.8 529.6c0 110.4-32 209.6-97.6 300.8-65.6 88-147.2 150.4-251.2 185.6-12.8 3.2-22.4 0-25.6-3.2-6.4-6.4-9.6-12.8-9.6-19.2v-140.8c0-43.2-12.8-75.2-35.2-94.4 25.6-3.2 46.4-6.4 68.8-12.8 19.2-6.4 40-12.8 62.4-25.6s40-28.8 52.8-43.2c12.8-16 25.6-40 35.2-68.8s12.8-62.4 12.8-100.8c0-52.8-19.2-100.8-52.8-137.6 16-40 16-84.8-6.4-134.4-12.8-3.2-32 0-52.8 6.4-22.4 9.6-43.2 19.2-59.2 28.8l-25.6 16c-40-12.8-84.8-19.2-128-19.2s-88 6.4-128 19.2c-6.4-6.4-16-9.6-28.8-19.2-12.8-6.4-32-16-56-25.6-25.6-9.6-43.2-12.8-56-9.6-19.2 49.6-22.4 94.4-3.2 134.4-35.2 38.4-52.8 84.8-52.8 137.6 0 38.4 3.2 72 12.8 100.8 9.6 28.8 22.4 52.8 35.2 68.8 16 19.2 32 32 52.8 43.2s40 22.4 62.4 25.6c22.4 3.2 43.2 9.6 68.8 12.8-19.2 16-28.8 38.4-32 68.8-9.6 3.2-19.2 6.4-32 9.6-9.6 3.2-22.4 3.2-38.4 3.2s-28.8-6.4-43.2-16c-16-9.6-25.6-22.4-38.4-40-9.6-16-19.2-25.6-32-35.2-12.8-9.6-25.6-16-32-16l-8-1.6c-9.6 0-16 0-19.2 3.2-3.2 3.2-3.2 3.2-3.2 6.4s3.2 6.4 6.4 9.6l9.6 9.6 3.2 3.2c9.6 3.2 19.2 12.8 28.8 25.6 9.6 12.8 16 25.6 22.4 35.2l6.4 16c6.4 16 16 32 28.8 40 12.8 9.6 28.8 16 43.2 19.2 16 3.2 32 3.2 46.4 3.2s28.8 0 38.4-3.2l16-3.2v94.4c0 9.6-3.2 16-9.6 19.2-6.4 3.2-16 6.4-25.6 3.2-104-35.2-185.6-94.4-251.2-185.6C35.2 736 3.2 635.2 3.2 523.2c0-94.4 22.4-179.2 68.8-257.6S177.6 123.2 256 78.4 419.2 9.6 513.6 9.6 692.8 32 771.2 78.4s140.8 107.2 185.6 185.6c40 88 64 172.8 64 265.6z" fill="#888888" p-id="2740"></path></svg>
-            </a>
-        
-    
-        
-            <a target="_blank" rel="noopener" href="https://gitee.com/LiuMingGitee/" >
-                <svg t="1676188377547" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2891" width="30" height="30"><path d="M512 1024C230.4 1024 0 793.6 0 512S230.4 0 512 0s512 230.4 512 512-230.4 512-512 512z m259.2-569.6H480c-12.8 0-25.6 12.8-25.6 25.6v64c0 12.8 12.8 25.6 25.6 25.6h176c12.8 0 25.6 12.8 25.6 25.6v12.8c0 41.6-35.2 76.8-76.8 76.8h-240c-12.8 0-25.6-12.8-25.6-25.6V416c0-41.6 35.2-76.8 76.8-76.8h355.2c12.8 0 25.6-12.8 25.6-25.6v-64c0-12.8-12.8-25.6-25.6-25.6H416c-105.6 0-188.8 86.4-188.8 188.8V768c0 12.8 12.8 25.6 25.6 25.6h374.4c92.8 0 169.6-76.8 169.6-169.6v-144c0-12.8-12.8-25.6-25.6-25.6z" fill="#888888" p-id="2892"></path></svg>
-            </a>
-        
-    
-</div>
-        
-    </div>
-</footer>
-    </div>
-    
-<script src="/js/back_top.js"></script>
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="/css/progress_bar.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.imgtg.com/2023/01/21/SqAtX.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photos/"><i class="fa-fw fas fa-images"></i><span> 相册</span></a></li><li><a class="site-page child" href="/videos/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url('https://i.imgtg.com/2023/01/21/Sot9s.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="liuming的个人博客"><span class="site-name">liuming的个人博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photos/"><i class="fa-fw fas fa-images"></i><span> 相册</span></a></li><li><a class="site-page child" href="/videos/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">liuming的个人博客</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/542113461052" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/987550c9/" title="酷狗音乐APi">酷狗音乐APi</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-02-05T05:20:55.000Z" title="发表于 2023-02-05 13:20:55">2023-02-05</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-07T17:25:28.393Z" title="更新于 2023-03-08 01:25:28">2023-03-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/api/">api</a></span></div><div class="content">搜索歌曲URL：http://mobilecdn.kugou.com/api/v3/search/song请求方式：GET参数keyword：关键词page：页码pagesize：每页数量例如，通过歌曲名获取歌曲信息。
+1GET http://mobilecdn.kugou.com/api/v3/search/song?keyword=房间&amp;page=1&amp;pagesize=1
+返回JSON
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798991001011021031041051061071081091101111121131141151161171181191201211221231241251261271281291301311321331341 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/f5a68550/" title="网易云音乐Api">网易云音乐Api</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-02-04T07:47:32.000Z" title="发表于 2023-02-04 15:47:32">2023-02-04</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-07T17:25:28.390Z" title="更新于 2023-03-08 01:25:28">2023-03-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/api/">api</a></span></div><div class="content">搜索歌曲URL：https://music.163.com/api/search/pc请求方式：GET参数s：关键词offset：偏移量limit：获取歌曲数type：类型(歌曲：1、专辑：10、歌手：100、歌单：1000、用户：1002、MV：1004、歌词：1006、主播电台：1009)例如，通过歌曲名获取歌曲信息。
+1GET https://music.163.com/api/search/pc?s=住在天狼星的那个人&amp;offset=0&amp;limit=1&amp;type=1
+返回JSON
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182{  "result": {    "songs": [      {        // 歌曲名        "name": "住在天狼星的那個人",        / ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/ae0f95e0/" title="SpringMVC">SpringMVC</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-21T12:27:33.000Z" title="发表于 2023-01-21 20:27:33">2023-01-21</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-07T17:25:28.402Z" title="更新于 2023-03-08 01:25:28">2023-03-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/ssm/springmvc/">springmvc</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/java/">java</a></span></div><div class="content">SpringMvc执行流程
+mvc执行流程具体步骤
+用户发送请求至前端控制器DispatcherServlet。
+DispatcherServlet收到请求调用HandlerMapping处理器映射器。
+处理器映射器根据请求url找到具体的处理器，生成处理器对象及处理器拦截器(如果有则生成)一并返回给DispatcherServlet。
+DispatcherServlet通过HandlerAdapter处理器适配器调用处理器。
+执行处理器(Controller层，也叫后端控制器)。
+Controller执行完成返回数据和视图(ModelAndView)。
+HandlerAdapter将controller执行结果ModelAndView返回给DispatcherServlet。
+DispatcherServlet将ModelAndView传给ViewReslover视图解析器。
+ViewReslover解析后返回具体的View视图（JSP / HTML）。
+DispatcherServlet对View进行渲染视图（即将模型数据填充至视图中）。
+DispatcherServlet响应用户 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/cbb782d9/" title="Spring Aop">Spring Aop</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-19T15:12:49.000Z" title="发表于 2023-01-19 23:12:49">2023-01-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-07T17:25:28.403Z" title="更新于 2023-03-08 01:25:28">2023-03-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/ssm/spring/">spring</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/java/">java</a></span></div><div class="content">Aop的使用如何使用AOP呢？首先我们要明确，要实现AOP操作，我们需要知道这些内容：
+
+需要切入的类，类的哪个方法需要被切入
+切入之后需要执行什么动作
+是在方法执行前切入还是在方法执行后切入
+如何告诉Spring需要进行切入
 
 
+Aop相关概念
+目标对象 : 被增强的方法所在的对象。
+代理对象 : 对目标对象进行增强后的对象，客户端实际调用的对象。
+通知（Advice）: AOP 框架中的增强处理，增强部分的代码逻辑。
+连接点（join point）: 连接点表示应用执行过程中能够插入切面的一个点，这个点可以是方法的调用、异常的抛出，实际上就是我们在方法执行前或是执行后需要做的内容。
+切点（PointCut）: 可以插入增强处理的连接点，可以是方法执行之前也可以方法执行之后，还可以是抛出异常之类的。
+切面（Aspect）: 切面是通知和切点的结合，我们之前在xml中定义的就是切面，包括很多信息。
+引入（Introduction）：引入允许我们向现有的类添加新的方法或者属性。
+织入（Weaving）: 将增强处理添加到目标对象中，并创建一个被增强的对象。
+
+
+模拟Aop实现增强对象
+1 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/3513a7dc/" title="Spring整合Mybatis">Spring整合Mybatis</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-19T12:28:19.000Z" title="发表于 2023-01-19 20:28:19">2023-01-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-07T17:25:28.408Z" title="更新于 2023-03-08 01:25:28">2023-03-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/ssm/spring/">spring</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/java/">java</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/xml/">xml</a></span></div><div class="content">导入坐标12345678910111213141516171819202122&lt;dependencies&gt;    &lt;dependency&gt;        &lt;groupId&gt;mysql&lt;/groupId&gt;        &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;        &lt;version&gt;8.0.25&lt;/version&gt;    &lt;/dependency&gt;    &lt;dependency&gt;        &lt;groupId&gt;org.mybatis&lt;/groupId&gt;        &lt;artifactId&gt;mybatis&lt;/artifactId&gt;        &lt;version&gt;3.5.7&lt;/version&gt;    &lt;/dependency&gt;    &lt;dependency&gt;        &lt;groupId&gt;org.my ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/d7cbf21a/" title="Spring后置处理器">Spring后置处理器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-19T11:13:30.000Z" title="发表于 2023-01-19 19:13:30">2023-01-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-07T17:25:28.406Z" title="更新于 2023-03-08 01:25:28">2023-03-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/ssm/spring/">spring</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/java/">java</a></span></div><div class="content">Bean工厂后处理器BeanFactoryPostProcessor
+BeanFactoryPostProcessor是一个接口规范，实现了该接口的类只要交由Spring容器管理的话，那么Spring就会回调该接口的方法，用于对BeanDefinition注册和修改的功能。
+Bean工厂后处理器，在BeanDefinitionMap填充完毕，Bean实例化之前执行；
+postProcessBeanFactory 参数本质就是 DefaultListableBeanFactory，拿到BeanFactory的引用，自然就可以对beanDefinitionMap中的BeanDefinition进行操作了。
+
+123456789@Componentpublic class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {    @Override    public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) t ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/89080a8e/" title="Spring Bean的生命周期">Spring Bean的生命周期</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-19T07:00:31.000Z" title="发表于 2023-01-19 15:00:31">2023-01-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-07T17:25:28.405Z" title="更新于 2023-03-08 01:25:28">2023-03-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/ssm/spring/">spring</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/java/">java</a></span></div><div class="content">
+Spring Bean的生命周期
+
+Bean 的实例化阶段：Spring 框架会取出 BeanDefinition 的信息进行判断当前 Bean 的范围是否是 singleton 的，是否不是延迟加载的，是否不是 FactoryBean 等，最终将一个普通的 Bean 通过反射进行实例化；
+Bean 的初始化阶段：Bean 创建之后还仅仅是个“半成品”，还需要对 Bean 实例的属性进行填充、执行一些 Aware 接口方法、执行  BeanPostProcessor 方法、执行 InitializingBean 接口的初始化方法、执行自定义初始化 init 方法等。该阶段是 Spring 最具技术含量和复杂度的阶段。Aop增强功能，Spring的注解功能等、Bean的循环引用问题都是在这个阶段体现的；
+Bean 的完成阶段：经过初始化阶段，Bean 就成为了一个完整的 Spring Bean ，被存储到单例池 singletonObjects 中或者将准备就绪的 Bean 交给调用者
+Bean的销毁阶段：如果 Bean 实现了 DisposableBean 接口，则 Spring 会 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/43fd2e45/" title="Spring注解开发">Spring注解开发</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-15T14:23:48.000Z" title="发表于 2023-01-15 22:23:48">2023-01-15</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-07T17:25:28.409Z" title="更新于 2023-03-08 01:25:28">2023-03-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/ssm/spring/">spring</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/java/">java</a></span></div><div class="content">
+导入依赖123456789101112131415161718192021&lt;dependency&gt;    &lt;groupId&gt;org.springframework&lt;/groupId&gt;    &lt;artifactId&gt;spring-context&lt;/artifactId&gt;    &lt;version&gt;6.0.3&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;    &lt;groupId&gt;javax.annotation&lt;/groupId&gt;    &lt;artifactId&gt;javax.annotation-api&lt;/artifactId&gt;    &lt;version&gt;1.3.2&lt;/version&gt;&lt;/dependency&gt;&lt;!-- 测试 --&gt;&lt;dependency&gt;    &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt; ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/4364fdb7/" title="Spring配置数据源">Spring配置数据源</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-15T12:48:24.000Z" title="发表于 2023-01-15 20:48:24">2023-01-15</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-07T17:25:28.410Z" title="更新于 2023-03-08 01:25:28">2023-03-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/ssm/spring/">spring</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/java/">java</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/xml/">xml</a></span></div><div class="content">
+导入数据源坐标和数据库坐标123456789101112131415161718192021222324252627&lt;dependencies&gt;    &lt;dependency&gt;        &lt;groupId&gt;com.zaxxer&lt;/groupId&gt;        &lt;artifactId&gt;HikariCP&lt;/artifactId&gt;        &lt;version&gt;5.0.1&lt;/version&gt;    &lt;/dependency&gt;    &lt;dependency&gt;        &lt;groupId&gt;com.mchange&lt;/groupId&gt;        &lt;artifactId&gt;c3p0&lt;/artifactId&gt;        &lt;version&gt;0.9.5.5&lt;/version&gt;    &lt;/dependency&gt;    &lt;dependency&gt;        &lt;groupI ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/84072a14/" title="Spring配置文件">Spring配置文件</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-15T05:28:49.000Z" title="发表于 2023-01-15 13:28:49">2023-01-15</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-07T17:25:28.412Z" title="更新于 2023-03-08 01:25:28">2023-03-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/ssm/spring/">spring</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/java/">java</a></span></div><div class="content">
+Spring重点配置：12345678910111213141516171819&lt;bean&gt;标签    id属性（也可以是name）：在容器中Bean的唯一标识，不允许重复    class属性：要实例化的Bean的全限定名    scope属性：Bean的作用域，常用的是singleton(单例)和prototype（多例），默认是singleton    init-method属性：指定类中的初始化方法名称    destroy-method属性：指定类中销毁方法名称    &lt;property&gt;标签：依赖注入        name属性：属性名        value属性：注入普通的属性值        ref属性：注入对象的引用值        &lt;list&gt;标签        &lt;map&gt;标签        &lt;properties&gt;标签    &lt;constructor-arg&gt;标签：        index属性：指定参数在构造函数参数列表的索引位置        name属性：指定参数在构造函数中的名称  ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.imgtg.com/2023/01/21/SqAtX.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">liuming</div><div class="author-info__description">liuming</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/542113461052" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/987550c9/" title="酷狗音乐APi">酷狗音乐APi</a><time datetime="2023-02-05T05:20:55.000Z" title="发表于 2023-02-05 13:20:55">2023-02-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/f5a68550/" title="网易云音乐Api">网易云音乐Api</a><time datetime="2023-02-04T07:47:32.000Z" title="发表于 2023-02-04 15:47:32">2023-02-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/ae0f95e0/" title="SpringMVC">SpringMVC</a><time datetime="2023-01-21T12:27:33.000Z" title="发表于 2023-01-21 20:27:33">2023-01-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/cbb782d9/" title="Spring Aop">Spring Aop</a><time datetime="2023-01-19T15:12:49.000Z" title="发表于 2023-01-19 23:12:49">2023-01-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/3513a7dc/" title="Spring整合Mybatis">Spring整合Mybatis</a><time datetime="2023-01-19T12:28:19.000Z" title="发表于 2023-01-19 20:28:19">2023-01-19</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/api/"><span class="card-category-list-name">api</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/ssm/"><span class="card-category-list-name">ssm</span><span class="card-category-list-count">8</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/ssm/spring/"><span class="card-category-list-name">spring</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/ssm/springmvc/"><span class="card-category-list-name">springmvc</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%B5%84%E6%BA%90/"><span class="card-category-list-name">资源</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/ubuntu/" style="font-size: 1.1em; color: #999">ubuntu</a> <a href="/tags/xml/" style="font-size: 1.3em; color: #99a1ac">xml</a> <a href="/tags/python/" style="font-size: 1.3em; color: #99a1ac">python</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a> <a href="/tags/c/" style="font-size: 1.3em; color: #99a1ac">c++</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">一月 2023</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">15</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">20.9k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-03-08T07:11:15.345Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By liuming</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js').then(() => {
+    jinrishici.load(result =>{
+      if (true) {
+        const sub = ["今日事&#44;今日毕","Never put off till tomorrow what you can do today"]
+        const content = result.data.content
+        sub.unshift(content)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').innerHTML = result.data.content
+      }
+    })
+  })
+}
+typedJSFn.run(subtitleType)
+</script></div><div id="aplayer" class="no-destroy"></div><script src="/js/music.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div>
         <script src="//cdn.jsdelivr.net/npm/js-base64/base64.min.js"></script>
         <script>
         const hasAttr = (e,a) => a.some(_=> e.attr(_)!==undefined);
@@ -980,5 +360,4 @@ $(document).ready(function() {
             }
           }
         });
-        </script></body>
-</html>
+        </script></body></html>
